@@ -1,0 +1,59 @@
+.connect-a-wallet-background-img {
+    background-size: cover;
+    background-position: center;
+    background-image: url(./../../img/connect-a-wallet/connect-a-wallet-img.webp);
+}
+
+.connect-a-wallet-section .row {
+    --bs-gutter-x: 7.5rem;
+    --bs-gutter-y: 7.5rem;
+}
+
+.connect-a-wallet-section .overview {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+    gap: 2.5rem;
+}
+
+.connect-a-wallet-section h2 {
+    font-size: var(--fs-xl);
+}
+
+.connect-a-wallet-section .bg-card {
+    padding: 1rem 1.25rem 1rem 2.5rem;
+}
+
+.connect-a-wallet-section p {
+    font-size: var(--fs-sm);
+}
+
+@media screen and (max-width:1200px) {
+    .connect-a-wallet-section .row {
+        --bs-gutter-x: 5rem;
+        --bs-gutter-y: 5rem;
+    }
+    .connect-a-wallet-section .overview {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .connect-a-wallet-section h2 {
+        font-size: var(--fs-lg);
+    }
+    .connect-a-wallet-section p {
+        font-size: var(--fs-xs)
+    }
+}
+
+@media screen and (max-width:768px) {
+    .connect-a-wallet-section .row {
+        --bs-gutter-x: 1.875rem;
+        --bs-gutter-y: 1.875rem;
+    }
+    .connect-a-wallet-background-img {
+        height: 14.5rem;
+    }
+    .connect-a-wallet-section .overview {
+        padding: 0 1.875rem 2.5rem 1.875rem;
+        gap: 1.875rem;
+    }
+}

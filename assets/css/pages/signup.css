@@ -1,0 +1,73 @@
+.signup-background-img {
+    background-size: cover;
+    background-position: center;
+    background-image: url(./../../img/signup/signup-img.webp);
+}
+
+.signup-section .row {
+    --bs-gutter-x: 7.5rem;
+    --bs-gutter-y: 7.5rem;
+}
+
+.signup-section .overview {
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+    gap: 2.5rem;
+}
+
+.signup-section h2 {
+    font-size: var(--fs-xl);
+}
+
+.signup-section p {
+    font-size: var(--fs-sm);
+}
+
+.signup-form {
+    max-width: 330px;
+}
+
+.form-input,.form-submit {
+    padding: 0.625rem 1.25rem;
+}
+
+.outline-0:focus {
+  outline: none;
+}
+
+@media screen and (max-width:1200px) {
+    .signup-section .row {
+        --bs-gutter-x: 5rem;
+        --bs-gutter-y: 5rem;
+    }
+    .signup-section .overview {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .signup-section h2 {
+        font-size: var(--fs-lg);
+    }
+    .signup-section p {
+        font-size: var(--fs-xs)
+    }
+    .signup-form {
+        max-width: 325px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .signup-section .row {
+        --bs-gutter-x: 1.875rem;
+        --bs-gutter-y: 1.875rem;
+    }
+    .signup-background-img {
+        height: 14.5rem;
+    }
+    .signup-section .overview {
+        padding: 0 1.875rem 2.5rem 1.875rem;
+        gap: 1.875rem;
+    }
+    .signup-form {
+        max-width: 315px;
+    }
+}

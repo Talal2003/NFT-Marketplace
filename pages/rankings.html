@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap 5.3.7 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="./../assets/css/main.css">
+    <link rel="stylesheet" href="./../assets/css/pages/rankings.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid" style="padding: 1.25rem 3.125rem;">
+                <a href="./../index.html">
+                    <div class="icon d-flex align-items-center gap-3">
+                        <img src="./../assets/svg/Storefront.svg" class="d-none d-xl-block" alt="Storefront logo">
+                        <img src="./../assets/svg/NFT Marketplace.svg" class="d-none d-xl-block" alt="NFT Marketplace logo">
+                        <img src="./../assets/svg/Storefront-Tablet.svg" class="d-block d-xl-none" alt="Storefront logo for tablet">
+                        <img src="./../assets/svg/NFT Marketplace-Tablet.svg" class="d-block d-xl-none" alt="NFT Marketplace logo for tablet">
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse fw-semibold" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-xl-0 d-flex align-items-center" style="gap: 0.625rem;">
+                        <li class="nav-item" style="padding: 0 1.25rem;">
+                            <a class="nav-link" aria-current="page" href="./marketplace.html">Marketplace</a>
+                        </li>
+                        <li class="nav-item" style="padding: 0 1.25rem;">
+                            <a class="nav-link active" href="./rankings.html">Rankings</a>
+                        </li>
+                        <li class="nav-item" style="padding: 0 1.25rem;">
+                            <a class="nav-link" href="./connect-a-wallet.html">Connect a wallet</a>
+                        </li>
+                        <li>
+                            <a href="./signup.html" class="btn btn-action d-flex gap-3"
+                            style="--bs-btn-padding-y: 1.1875rem; --bs-btn-padding-x: 1.875rem; --bs-btn-font-size: 1rem;">
+                                <img src="./../assets/svg/User.svg" alt="">
+                                <span class="fw-semibold">Sign Up</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="headline">
+            <div class="custom__container d-flex gap-4">
+                <div>
+                    <h2 class="fw-semibold">Top Creators</h2>
+                    <p class="mb-0">Check out top ranking NFT artists on the NFT Marketplace.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tab-bar">
+            <div class="custom__container">
+                <ul class="nav d-flex w-100" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active position-relative w-100" id="today-tab" data-bs-toggle="tab" data-bs-target="#today-tab-pane" type="button" role="tab" aria-controls="today-tab-pane" aria-selected="true">
+                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                <span class="title d-none d-md-flex">Today</span>
+                                <span class="title d-flex d-md-none">1d</span>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link position-relative w-100" id="this-week-tab" data-bs-toggle="tab" data-bs-target="#this-week-tab-pane" type="button" role="tab" aria-controls="this-week-tab-pane" aria-selected="false">
+                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                <span class="title d-none d-md-flex">This Week</span>
+                                <span class="title d-flex d-md-none">7d</span>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link position-relative w-100" id="this-month-tab" data-bs-toggle="tab" data-bs-target="#this-month-tab-pane" type="button" role="tab" aria-controls="this-month-tab-pane" aria-selected="false">
+                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                <span class="title d-none d-md-flex">This Month</span>
+                                <span class="title d-flex d-md-none">30d</span>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link position-relative w-100" id="all-time-tab" data-bs-toggle="tab" data-bs-target="#all-time-tab-pane" type="button" role="tab" aria-controls="all-time-tab-pane" aria-selected="false">
+                            <div class="d-flex justify-content-center align-items-center gap-3">
+                                <span class="title">All Time</span>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="rankings-list">
+            <div class="custom__container d-flex flex-column gap-3">
+                <div class="table-header rounded__20">
+                    <div class="header-container d-flex align-items-center justify-content-between">
+                        <div class="header-creator d-flex align-items-center gap-3">
+                            <span class="header-num text-caption d-flex align-items-center justify-content-center">#</span>
+                            <span class="header-name text-caption">Artist</span>
+                        </div>
+                        <div class="header-overview text-caption d-flex gap-3">
+                            <span class="d-none d-md-flex">Change</span>
+                            <span class="d-none d-xl-flex">NFTs Sold</span>
+                            <span>Volume</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./artist-page.html" class="text-reset text-decoration-none">
+                    <div class="table-item bg-card rounded__20">
+                        <div class="card-container d-flex align-items-center justify-content-between">
+                            <div class="creator d-flex align-items-center gap-3">
+                                <span class="creator-num text-caption d-flex align-items-center justify-content-center">1</span>
+                                <div class="creator-avatar-name d-flex align-items-center gap-3">
+                                    <img src="./../assets/img/rankings/Avatar.webp" alt="" class="creator-avatar">
+                                    <span class="creator-name">Marcus Saris</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex gap-3">
+                                <span class="text-success d-none d-md-flex">+1.41%</span>
+                                <span class="d-none d-xl-flex">602</span>
+                                <span>12.4 ETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-footer bg-card">
+        <div class="custom__container">
+            <div class="row g-md-4 g-sm-4 px-4">
+                <div class="col-xl-4 col-md-12 col-sm-12 d-flex flex-column gap-4">
+                    <div class="icon d-flex align-items-center gap-3">
+                        <img src="./../assets/svg/Storefront.svg" alt="Storefront logo">
+                        <img src="./../assets/svg/NFT Marketplace.svg" alt="NFT Marketplace logo">
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <p class="mb-0">NFT marketplace UI created with Anima for Figma.</p>
+                        <div class="d-flex flex-column gap-2">
+                            <p class="mb-0">Join our community</p>
+                            <div class="d-flex gap-2">
+                                <a href="#"><img src="./../assets/svg/DiscordLogo.svg" alt=""></a>
+                                <a href="#"><img src="./../assets/svg/YoutubeLogo.svg" alt=""></a>
+                                <a href="#"><img src="./../assets/svg/TwitterLogo.svg" alt=""></a>
+                                <a href="#"><img src="./../assets/svg/InstagramLogo.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-12 col-sm-12 d-flex flex-column gap-3">
+                    <h4 class="secondaryFont fw-bold text-light">Explore</h4>
+                    <div id="navbarSupportedContent">
+                        <ul class="navbar-nav d-flex flex-column gap-3">
+                            <li class="nav-item">
+                                <a class="text-reset text-decoration-none" aria-current="page" href="#">Marketplace</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-reset text-decoration-none" href="#">Rankings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-reset text-decoration-none" href="#">Connect a wallet</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-5 col-md-12 col-sm-12 d-flex flex-column gap-3">
+                    <h4 class="secondaryFont fw-bold text-light">Join our weekly digest</h4>
+                    <div class="d-flex flex-column gap-3">
+                        <p class="mb-0">Get exclusive promotions & updates straight to your inbox.</p>
+                        <form class="position-relative w-100 d-flex flex-column gap-3" style="max-width: 420px;">
+                            <input type="email" class="newsletter__signup__input form__control bg-light dark-text-placeholder text-background rounded__20 w-100"
+                            id="exampleFormControlInput1" placeholder="Enter your email here">
+                            <button type="submit" class="btn btn-action position__md__absolute end-0 top-0 bottom-0 d-flex gap-2 align-items-center justify-content-center rounded__20 w__sm__100"
+                            style="--bs-btn-padding-x: 3rem;">
+                                <img src="./../assets/svg/EnvelopeSimple.svg" class="d-md-none" alt="" style="width: 1.25rem; height: auto;">
+                                <span class="newsletter__signup__btn fw-semibold">Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <img src="./../assets/svg/Divider.svg" class="pt-4 d-none d-md-block" alt="Divider">
+            <img src="./../assets/svg/Divider-Mobile.svg" class="pt-4 d-block d-md-none" alt="Divider For Mobile">
+            <p class="mb-0 pt-3" style="font-size: 0.75rem;"">Ⓒ NFT Market. Use this template freely.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap 5.3.7 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

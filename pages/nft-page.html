@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap 5.3.7 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="./../assets/css/main.css">
+    <link rel="stylesheet" href="./../assets/css/pages/nft-page.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid" style="padding: 1.25rem 3.125rem;">
+                <a href="./../index.html">
+                    <div class="icon d-flex align-items-center gap-3">
+                        <img src="./../assets/svg/Storefront.svg" class="d-none d-xl-block" alt="Storefront logo">
+                        <img src="./../assets/svg/NFT Marketplace.svg" class="d-none d-xl-block" alt="NFT Marketplace logo">
+                        <img src="./../assets/svg/Storefront-Tablet.svg" class="d-block d-xl-none" alt="Storefront logo for tablet">
+                        <img src="./../assets/svg/NFT Marketplace-Tablet.svg" class="d-block d-xl-none" alt="NFT Marketplace logo for tablet">
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse fw-semibold" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-xl-0 d-flex align-items-center" style="gap: 0.625rem;">
+                        <li class="nav-item" style="padding: 0 1.25rem;">
+                            <a class="nav-link" aria-current="page" href="./marketplace.html">Marketplace</a>
+                        </li>
+                        <li class="nav-item" style="padding: 0 1.25rem;">
+                            <a class="nav-link" href="./rankings.html">Rankings</a>
+                        </li>
+                        <li class="nav-item" style="padding: 0 1.25rem;">
+                            <a class="nav-link" href="./connect-a-wallet.html">Connect a wallet</a>
+                        </li>
+                        <li>
+                            <a href="./signup.html" class="btn btn-action d-flex gap-3"
+                            style="--bs-btn-padding-y: 1.1875rem; --bs-btn-padding-x: 1.875rem; --bs-btn-font-size: 1rem;">
+                                <img src="./../assets/svg/User.svg" alt="">
+                                <span class="fw-semibold">Sign Up</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="nft-background-img">
+            <div class="cover"></div>
+        </section>
+
+        <section class="nft-info">
+            <div class="custom__container d-flex flex-row align-items-start">
+                <div class="overview d-flex flex-column gap-4">
+                    <div class="profile-name">
+                        <h2 class="fw-semibold">The Orbitians</h2>
+                        <p class="mb-0 text-caption">Minted on Sep 30, 2022</p>
+                    </div>
+                    <div class="auction bg-card rounded__20 d-flex d-md-none flex-column align-items-center gap-4"
+                    style="padding: 1.875rem;">
+                        <div class="d-flex flex-column gap-1">
+                            <p class="mb-0 secondaryFont" style="font-size: 0.75rem;">Auction ends in:</p>
+                            <div class="time d-flex gap-2">
+                                <div class="hours d-flex flex-column">
+                                    <span class="secondaryFont fw-bold fs__lg" style="line-height: 120%;">59</span>
+                                    <span class="secondaryFont" style="font-size: 0.75rem;">Hours</span>
+                                </div>
+                                <span class="secondaryFont fw-bold fs__md" style="line-height: 150%;">:</span>
+                                <div class="minutes d-flex flex-column">
+                                    <span class="secondaryFont fw-bold fs__lg" style="line-height: 120%;">59</span>
+                                    <span class="secondaryFont" style="font-size: 0.75rem;">Minutes</span>
+                                </div>
+                                <span class="secondaryFont fw-bold fs__md" style="line-height: 150%;">:</span>
+                                <div class="seconds d-flex flex-column">
+                                    <span class="secondaryFont fw-bold fs__lg" style="line-height: 120%;">59</span>
+                                    <span class="secondaryFont" style="font-size: 0.75rem;">Seconds</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-action btn-outline-action d-flex justify-content-center gap-3"
+                        style="--bs-btn-padding-y: 1.1875rem; --bs-btn-padding-x: 5.03125rem; --bs-btn-font-size: 1rem;">
+                            <span class="fw-semibold text-light text-nowrap">Place Bid</span>
+                        </button>
+                    </div>
+                    <div class="creator d-flex flex-column gap-1">
+                        <h4 class="secondaryFont text-caption">Created By</h4>
+                        <a href="./artist-page.html" class="d-flex align-items-center gap-2 text-reset text-decoration-none">
+                            <img src="./../assets/img/nft-page/Avatar.webp" alt="Place holder for avatar">
+                            <span class="creator-name">Orbitian</span>
+                        </a>
+                    </div>
+                    <div class="description d-flex flex-column gap-1">
+                        <h4 class="secondaryFont text-caption">Description</h4>
+                        <p>
+                            The Orbitians
+                            <br><br>is a collection of 10,000 unique NFTs on the Ethereum blockchain,
+                            <br><br>There are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians.
+                            <br><br>They live in a metal space machines, high up in the sky and only have one foot on Earth.
+                            These Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations.
+                            The invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be.
+                            Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory,
+                            so they've taken to make human beings their target.
+                        </p>
+                    </div>
+                    <div class="details d-flex flex-column gap-1">
+                        <h4 class="secondaryFont text-caption">Details</h4>
+                        <a href="#" class="d-flex align-items-center gap-2 text-reset text-decoration-none">
+                            <img src="./../assets/svg/Globe.svg" alt="">
+                            <span>View on Etherscan</span>
+                        </a>
+                        <a href="#" class="d-flex align-items-center gap-2 text-reset text-decoration-none">
+                            <img src="./../assets/svg/Globe.svg" alt="">
+                            <span>View Original</span>
+                        </a>
+                    </div>
+                    <div class="tags d-flex flex-column gap-1">
+                        <h4 class="secondaryFont text-caption">Tags</h4>
+                        <ul class="d-flex align-items-start flex-column flex-xl-row gap-3 list-unstyled p-0">
+                            <li class="d-flex">
+                                <a href="#" class="tag bg-card rounded__20 text-reset text-decoration-none">
+                                    <span class="text-capitalize fs__xs  fw-semibold">animation</span>
+                                </a>
+                            </li>
+                            <li class="d-flex">
+                                <a href="#" class="tag bg-card rounded__20 text-reset text-decoration-none">
+                                    <span class="text-capitalize fs__xs  fw-semibold">illustration</span>
+                                </a>
+                            </li>
+                            <li class="d-flex">
+                                <a href="#" class="tag bg-card rounded__20 text-reset text-decoration-none">
+                                    <span class="text-capitalize fs__xs  fw-semibold">moon</span>
+                                </a>
+                            </li>
+                            <li class="d-flex">
+                                <a href="#" class="tag bg-card rounded__20 text-reset text-decoration-none">
+                                    <span class="text-capitalize fs__xs  fw-semibold">moon</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="auction bg-card rounded__20 d-none d-md-flex flex-column align-items-center gap-4"
+                style="padding: 1.875rem;">
+                    <div class="d-flex flex-column gap-1">
+                        <p class="mb-0 secondaryFont" style="font-size: 0.75rem;">Auction ends in:</p>
+                        <div class="time d-flex gap-2">
+                            <div class="hours d-flex flex-column">
+                                <span class="secondaryFont fw-bold fs__lg" style="line-height: 120%;">59</span>
+                                <span class="secondaryFont" style="font-size: 0.75rem;">Hours</span>
+                            </div>
+                            <span class="secondaryFont fw-bold fs__md" style="line-height: 150%;">:</span>
+                            <div class="minutes d-flex flex-column">
+                                <span class="secondaryFont fw-bold fs__lg" style="line-height: 120%;">59</span>
+                                <span class="secondaryFont" style="font-size: 0.75rem;">Minutes</span>
+                            </div>
+                            <span class="secondaryFont fw-bold fs__md" style="line-height: 150%;">:</span>
+                            <div class="seconds d-flex flex-column">
+                                <span class="secondaryFont fw-bold fs__lg" style="line-height: 120%;">59</span>
+                                <span class="secondaryFont" style="font-size: 0.75rem;">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-action btn-outline-action d-flex justify-content-center gap-3"
+                    style="--bs-btn-padding-y: 1.1875rem; --bs-btn-padding-x: 5.03125rem; --bs-btn-font-size: 1rem;">
+                        <span class="fw-semibold text-light text-nowrap">Place Bid</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="more-from-this-artist gap-5">
+            <div class="custom__container gap-5">
+                <div class="title-container d-flex gap-5">
+                    <div class="title">
+                        <h2 class="fw-semibold text-capitalize">More from this artist</h2>
+                    </div>
+                    <div class="artist-page-btn ms-auto d-none d-md-flex gap-4">
+                        <a href="./artist-page.html" class="btn btn-outline-primary btn-outline-action d-flex justify-content-center gap-3"
+                        style="--bs-btn-padding-y: 1.1875rem; --bs-btn-padding-x: 3.125rem; --bs-btn-font-size: 1rem;">
+                            <img src="./../assets/svg/ArrowRight.svg" alt="">
+                            <spa class="fw-semibold text-light text-nowrap">Go To Artist Page</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row gx-4 gy-5">
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <img src="./../assets/img/discover-more-nfts/distant-galaxy.webp" class="card-img-top" alt="...">
+                        <div class="card-body bg-card p-4 rounded__bottom__20 d-flex flex-column gap-4">
+                            <div class="d-flex flex-column gap-1">
+                                <span class="title fw-semibold fs__sm">Distant Galaxy</span>
+                                <div class="owner d-flex gap-3">
+                                    <img src="./../assets/img/discover-more-nfts/moondancer-pfp.webp" alt="">
+                                    <span class="secondaryFont fs__xs">MoonDancer</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex justify-content-between">
+                                <div class="price d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Price</span>
+                                    <span class="secondaryFont">1.63 ETH</span>
+                                </div>
+                                <div class="highest-bid d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Highest Bid</span>
+                                    <span class="secondaryFont">0.33 wETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <img src="./../assets/img/discover-more-nfts/distant-galaxy.webp" class="card-img-top" alt="...">
+                        <div class="card-body bg-card p-4 rounded__bottom__20 d-flex flex-column gap-4">
+                            <div class="d-flex flex-column gap-1">
+                                <span class="title fw-semibold fs__sm">Distant Galaxy</span>
+                                <div class="owner d-flex gap-3">
+                                    <img src="./../assets/img/discover-more-nfts/moondancer-pfp.webp" alt="">
+                                    <span class="secondaryFont fs__xs">MoonDancer</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex justify-content-between">
+                                <div class="price d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Price</span>
+                                    <span class="secondaryFont">1.63 ETH</span>
+                                </div>
+                                <div class="highest-bid d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Highest Bid</span>
+                                    <span class="secondaryFont">0.33 wETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-sm-12 d-none d-md-block">
+                        <img src="./../assets/img/discover-more-nfts/distant-galaxy.webp" class="card-img-top" alt="...">
+                        <div class="card-body bg-card p-4 rounded__bottom__20 d-flex flex-column gap-4">
+                            <div class="d-flex flex-column gap-1">
+                                <span class="title fw-semibold fs__sm">Distant Galaxy</span>
+                                <div class="owner d-flex gap-3">
+                                    <img src="./../assets/img/discover-more-nfts/moondancer-pfp.webp" alt="">
+                                    <span class="secondaryFont fs__xs">MoonDancer</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex justify-content-between">
+                                <div class="price d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Price</span>
+                                    <span class="secondaryFont">1.63 ETH</span>
+                                </div>
+                                <div class="highest-bid d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Highest Bid</span>
+                                    <span class="secondaryFont">0.33 wETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-sm-12 d-none d-md-block">
+                        <img src="./../assets/img/discover-more-nfts/distant-galaxy.webp" class="card-img-top" alt="...">
+                        <div class="card-body bg-card p-4 rounded__bottom__20 d-flex flex-column gap-4">
+                            <div class="d-flex flex-column gap-1">
+                                <span class="title fw-semibold fs__sm">Distant Galaxy</span>
+                                <div class="owner d-flex gap-3">
+                                    <img src="./../assets/img/discover-more-nfts/moondancer-pfp.webp" alt="">
+                                    <span class="secondaryFont fs__xs">MoonDancer</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex justify-content-between">
+                                <div class="price d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Price</span>
+                                    <span class="secondaryFont">1.63 ETH</span>
+                                </div>
+                                <div class="highest-bid d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Highest Bid</span>
+                                    <span class="secondaryFont">0.33 wETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-sm-12 d-none d-md-block">
+                        <img src="./../assets/img/discover-more-nfts/distant-galaxy.webp" class="card-img-top" alt="...">
+                        <div class="card-body bg-card p-4 rounded__bottom__20 d-flex flex-column gap-4">
+                            <div class="d-flex flex-column gap-1">
+                                <span class="title fw-semibold fs__sm">Distant Galaxy</span>
+                                <div class="owner d-flex gap-3">
+                                    <img src="./../assets/img/discover-more-nfts/moondancer-pfp.webp" alt="">
+                                    <span class="secondaryFont fs__xs">MoonDancer</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex justify-content-between">
+                                <div class="price d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Price</span>
+                                    <span class="secondaryFont">1.63 ETH</span>
+                                </div>
+                                <div class="highest-bid d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Highest Bid</span>
+                                    <span class="secondaryFont">0.33 wETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-sm-12 d-none d-md-block">
+                        <img src="./../assets/img/discover-more-nfts/distant-galaxy.webp" class="card-img-top" alt="...">
+                        <div class="card-body bg-card p-4 rounded__bottom__20 d-flex flex-column gap-4">
+                            <div class="d-flex flex-column gap-1">
+                                <span class="title fw-semibold fs__sm">Distant Galaxy</span>
+                                <div class="owner d-flex gap-3">
+                                    <img src="./../assets/img/discover-more-nfts/moondancer-pfp.webp" alt="">
+                                    <span class="secondaryFont fs__xs">MoonDancer</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex justify-content-between">
+                                <div class="price d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Price</span>
+                                    <span class="secondaryFont">1.63 ETH</span>
+                                </div>
+                                <div class="highest-bid d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Highest Bid</span>
+                                    <span class="secondaryFont">0.33 wETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-sm-12 d-none d-xl-block">
+                        <img src="./../assets/img/discover-more-nfts/distant-galaxy.webp" class="card-img-top" alt="...">
+                        <div class="card-body bg-card p-4 rounded__bottom__20 d-flex flex-column gap-4">
+                            <div class="d-flex flex-column gap-1">
+                                <span class="title fw-semibold fs__sm">Distant Galaxy</span>
+                                <div class="owner d-flex gap-3">
+                                    <img src="./../assets/img/discover-more-nfts/moondancer-pfp.webp" alt="">
+                                    <span class="secondaryFont fs__xs">MoonDancer</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex justify-content-between">
+                                <div class="price d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Price</span>
+                                    <span class="secondaryFont">1.63 ETH</span>
+                                </div>
+                                <div class="highest-bid d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Highest Bid</span>
+                                    <span class="secondaryFont">0.33 wETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-sm-12 d-none d-xl-block">
+                        <img src="./../assets/img/discover-more-nfts/distant-galaxy.webp" class="card-img-top" alt="...">
+                        <div class="card-body bg-card p-4 rounded__bottom__20 d-flex flex-column gap-4">
+                            <div class="d-flex flex-column gap-1">
+                                <span class="title fw-semibold fs__sm">Distant Galaxy</span>
+                                <div class="owner d-flex gap-3">
+                                    <img src="./../assets/img/discover-more-nfts/moondancer-pfp.webp" alt="">
+                                    <span class="secondaryFont fs__xs">MoonDancer</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex justify-content-between">
+                                <div class="price d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Price</span>
+                                    <span class="secondaryFont">1.63 ETH</span>
+                                </div>
+                                <div class="highest-bid d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Highest Bid</span>
+                                    <span class="secondaryFont">0.33 wETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-sm-12 d-none d-xl-block">
+                        <img src="./../assets/img/discover-more-nfts/distant-galaxy.webp" class="card-img-top" alt="...">
+                        <div class="card-body bg-card p-4 rounded__bottom__20 d-flex flex-column gap-4">
+                            <div class="d-flex flex-column gap-1">
+                                <span class="title fw-semibold fs__sm">Distant Galaxy</span>
+                                <div class="owner d-flex gap-3">
+                                    <img src="./../assets/img/discover-more-nfts/moondancer-pfp.webp" alt="">
+                                    <span class="secondaryFont fs__xs">MoonDancer</span>
+                                </div>
+                            </div>
+                            <div class="overview d-flex justify-content-between">
+                                <div class="price d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Price</span>
+                                    <span class="secondaryFont">1.63 ETH</span>
+                                </div>
+                                <div class="highest-bid d-flex flex-column">
+                                    <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Highest Bid</span>
+                                    <span class="secondaryFont">0.33 wETH</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="./artist-page.html" class="btn btn-outline-primary btn-outline-action d-flex d-md-none justify-content-center gap-3"
+                style="--bs-btn-padding-y: 1.1875rem; --bs-btn-padding-x: 3.125rem; --bs-btn-font-size: 1rem;">
+                    <img src="./../assets/svg/ArrowRight.svg" alt="">
+                    <spa class="fw-semibold text-light text-nowrap">Go To Artist Page</span>
+                </a>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-footer bg-card">
+        <div class="custom__container">
+            <div class="row g-md-4 g-sm-4 px-4">
+                <div class="col-xl-4 col-md-12 col-sm-12 d-flex flex-column gap-4">
+                    <div class="icon d-flex align-items-center gap-3">
+                        <img src="./../assets/svg/Storefront.svg" alt="Storefront logo">
+                        <img src="./../assets/svg/NFT Marketplace.svg" alt="NFT Marketplace logo">
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <p class="mb-0">NFT marketplace UI created with Anima for Figma.</p>
+                        <div class="d-flex flex-column gap-2">
+                            <p class="mb-0">Join our community</p>
+                            <div class="d-flex gap-2">
+                                <a href="#"><img src="./../assets/svg/DiscordLogo.svg" alt=""></a>
+                                <a href="#"><img src="./../assets/svg/YoutubeLogo.svg" alt=""></a>
+                                <a href="#"><img src="./../assets/svg/TwitterLogo.svg" alt=""></a>
+                                <a href="#"><img src="./../assets/svg/InstagramLogo.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-12 col-sm-12 d-flex flex-column gap-3">
+                    <h4 class="secondaryFont fw-bold text-light">Explore</h4>
+                    <div id="navbarSupportedContent">
+                        <ul class="navbar-nav d-flex flex-column gap-3">
+                            <li class="nav-item">
+                                <a class="text-reset text-decoration-none" aria-current="page" href="#">Marketplace</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-reset text-decoration-none" href="#">Rankings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-reset text-decoration-none" href="#">Connect a wallet</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-5 col-md-12 col-sm-12 d-flex flex-column gap-3">
+                    <h4 class="secondaryFont fw-bold text-light">Join our weekly digest</h4>
+                    <div class="d-flex flex-column gap-3">
+                        <p class="mb-0">Get exclusive promotions & updates straight to your inbox.</p>
+                        <form class="position-relative w-100 d-flex flex-column gap-3" style="max-width: 420px;">
+                            <input type="email" class="newsletter__signup__input form__control bg-light dark-text-placeholder text-background rounded__20 w-100"
+                            id="exampleFormControlInput1" placeholder="Enter your email here">
+                            <button type="submit" class="btn btn-action position__md__absolute end-0 top-0 bottom-0 d-flex gap-2 align-items-center justify-content-center rounded__20 w__sm__100"
+                            style="--bs-btn-padding-x: 3rem;">
+                                <img src="./../assets/svg/EnvelopeSimple.svg" class="d-md-none" alt="" style="width: 1.25rem; height: auto;">
+                                <span class="newsletter__signup__btn fw-semibold">Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <img src="./../assets/svg/Divider.svg" class="pt-4 d-none d-md-block" alt="Divider">
+            <img src="./../assets/svg/Divider-Mobile.svg" class="pt-4 d-block d-md-none" alt="Divider For Mobile">
+            <p class="mb-0 pt-3" style="font-size: 0.75rem;"">Ⓒ NFT Market. Use this template freely.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap 5.3.7 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

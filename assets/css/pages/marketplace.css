@@ -1,0 +1,103 @@
+.headline {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.headline h2 {
+    font-size: var(--fs-xl);
+}
+
+.headline p {
+    font-size: var(--fs-sm);
+}
+
+.headline .search-box {
+    padding: 1.125rem 1.25rem;
+    border: 1px solid var(--SecondaryBackground);
+}
+
+.headline .text-placeholder::placeholder  {
+    color: var(--caption);
+}
+
+.tab-bar {
+    padding-top: 0.625rem;
+}
+
+.tab-bar .nav-item {
+    flex: 1 1 0;
+}
+
+.tab-bar .nav-link {
+    color: var(--caption);
+    padding: 0.875rem 0;
+    border: none;
+}
+
+.tab-bar .nav-link.active {
+    background-image: url(./../../svg/Tab.svg);
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+}
+
+.tab-bar .title {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.tab-bar .num-item {
+    background-color: var(--SecondaryBackground);
+    font-size: var(--fs-xs);
+    font-family: var(--secondaryFont);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.tab-bar .nav-link.active .num-item {
+    background-color: var(--caption);
+}
+
+.marketplace-section {
+    padding-top: 3.75rem;
+    padding-bottom: 5rem;
+}
+
+@media screen and (max-width:1200px) {
+    .headline {
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
+    }
+    .headline h2 {
+        font-size: var(--fs-lg);
+    }
+    .headline p {
+        font-size: var(--fs-xs);
+    }
+    .tab-bar .nav-link {
+        padding: 1.15625rem 0;
+    }
+    .tab-bar .title {
+        font-size: var(--fs-xs);
+    }
+    .tab-bar .num-item {
+        font-size: var(--fs-xxs);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .headline {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .headline h2 {
+        font-size: var(--fs-md);
+    }
+    .tab-bar .nav-link {
+        padding: 1.1875rem 0;
+    }
+    .marketplace-section {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}

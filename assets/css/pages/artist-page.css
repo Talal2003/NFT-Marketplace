@@ -1,0 +1,120 @@
+.avatar-cover .cover {
+    background-size: cover;
+    background-position: center;
+    background-image: url(./../../img/artist-page/Image-Placeholder.webp);
+    height: 20rem;
+}
+
+.avatar-cover .avatar {
+    height: 3.125rem;
+    width: 100%;
+}
+
+.artist-info {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.profile-name h2 {
+    font-size: var(--fs-xl);
+}
+
+.profile-info .value {
+    font-size: var(--fs-md);
+}
+
+.profile-info .label {
+    font-size: var(--fs-sm);
+}
+
+.bio h4,.links h4 {
+    font-size: var(--fs-sm);
+    font-weight: 700;
+}
+
+.bio p {
+    font-size: var(--fs-sm);
+}
+
+.nft-card-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.tab-bar {
+    padding-top: 0.625rem;
+}
+
+.tab-bar .nav-item {
+    flex: 1 1 0;
+}
+
+.tab-bar .nav-link {
+    color: var(--caption);
+    width: 21.875rem;
+    padding: 0.875rem 0;
+    border: none;
+}
+
+.tab-bar .nav-link.active {
+    background-image: url(./../../svg/Tab.svg);
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+}
+
+.tab-bar .title {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.tab-bar .num-item {
+    background-color: var(--SecondaryBackground);
+    font-size: var(--fs-xs);
+    font-family: var(--secondaryFont);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.tab-bar .nav-link.active .num-item {
+    background-color: var(--caption);
+}
+
+@media screen and (max-width:1200px) {
+    .profile-name h2 {
+        font-size: var(--fs-lg);
+    }
+    .profile-info .value {
+        font-size: var(--fs-sm);
+    }
+    .profile-info .label {
+        font-size: var(--fs-xs);
+    }
+    .bio h4,.links h4 {
+        font-size: var(--fs-xs);
+        font-weight: normal;
+    }
+    .bio p {
+        font-size: var(--fs-xs);
+    }
+    .tab-bar .nav-link {
+        padding: 1.15625rem 0;
+        width: 14.166875rem;
+    }
+    .tab-bar .title {
+        font-size: var(--fs-xs);
+    }
+    .tab-bar .num-item {
+        font-size: var(--fs-xxs);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .profile-name h2 {
+        font-size: var(--fs-md);
+    }
+    .tab-bar .nav-link {
+        padding: 1.1875rem 0;
+        width: 6.5625rem;
+    }
+}

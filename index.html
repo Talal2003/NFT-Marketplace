@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap 5.3.7 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid" style="padding: 1.25rem 3.125rem;">
+                <a href="./index.html">
+                    <div class="icon d-flex align-items-center gap-3">
+                        <img src="./assets/svg/Storefront.svg" class="d-none d-xl-block" alt="Storefront logo">
+                        <img src="./assets/svg/NFT Marketplace.svg" class="d-none d-xl-block" alt="NFT Marketplace logo">
+                        <img src="./assets/svg/Storefront-Tablet.svg" class="d-block d-xl-none" alt="Storefront logo for tablet">
+                        <img src="./assets/svg/NFT Marketplace-Tablet.svg" class="d-block d-xl-none" alt="NFT Marketplace logo for tablet">
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse fw-semibold" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-xl-0 d-flex align-items-center" style="gap: 0.625rem;">
+                        <li class="nav-item" style="padding: 0 1.25rem;">
+                            <a class="nav-link" aria-current="page" href="./pages/marketplace.html">Marketplace</a>
+                        </li>
+                        <li class="nav-item" style="padding: 0 1.25rem;">
+                            <a class="nav-link" href="./pages/rankings.html">Rankings</a>
+                        </li>
+                        <li class="nav-item" style="padding: 0 1.25rem;">
+                            <a class="nav-link" href="./pages/connect-a-wallet.html">Connect a wallet</a>
+                        </li>
+                        <li>
+                            <a href="./pages/signup.html" class="btn btn-action d-flex gap-3"
+                            style="--bs-btn-padding-y: 1.1875rem; --bs-btn-padding-x: 1.875rem; --bs-btn-font-size: 1rem;">
+                                <img src="./assets/svg/User.svg" alt="">
+                                <span class="fw-semibold">Sign Up</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="custom__container">
+                <div class="row d-flex">
+                    <div class="col-xl-6 col-md-6 col-sm-12 d-flex flex-column gap-4 align-items-center align-items-md-start">
+                        <h1 class="mb-0 fw-semibold">Discover digital art & Collect NFTs</h1>
+                        <p class="mb-0">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
+                        
+                        <div class="d-block d-md-none w-100">
+                            <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                                <img src="./assets/img/hero/space-walking.webp" class="card-img-top" alt="...">
+                                <div class="bg-card d-flex flex-column p-3 gap-2 rounded__bottom__20">
+                                    <span class="fs__sm">Space Walking</span>
+                                    <div class="owner d-flex gap-3">
+                                        <img src="./assets/img/hero/animakid-pfp.webp" alt="">
+                                        <span class="fs__xs">Animakid</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <a href="./pages/signup.html" class="btn btn-action d-flex gap-3 justify-content-center align-self-stretch align-self-md-start"
+                        style="--bs-btn-padding-y: 1.25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;">
+                            <img src="./assets/svg/RocketLaunch.svg" alt="" style="width: 1.25rem; height: auto;">
+                            <span class="fw-semibold">Get Started</span>
+                        </a>
+                        
+                        <div class="overview d-flex gap-4 justify-content-center justify-content-md-start w-100">
+                            <div class="d-flex flex-column pe-5">
+                                <span class="value secondaryFont fw-bold">240k+</span>
+                                <span class="label text-nowrap">Total Sale</span>
+                            </div>
+                            <div class="d-flex flex-column pe-5">
+                                <span class="value secondaryFont fw-bold">100k+</span>
+                                <span class="label text-nowrap">Auctions</span>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <span class="value secondaryFont fw-bold">240k+</span>
+                                <span class="label text-nowrap">Artists</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-xl-6 col-md-6 col-sm-12 d-none d-md-block">
+                        <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                            <img src="./assets/img/hero/space-walking.webp" class="card-img-top" alt="...">
+                            <div class="bg-card d-flex flex-column p-3 gap-2 rounded__bottom__20">
+                                <span class="fs__sm">Space Walking</span>
+                                <div class="owner d-flex gap-3">
+                                    <img src="./assets/img/hero/animakid-pfp.webp" alt="">
+                                    <span class="fs__xs">Animakid</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending-collection">
+            <div class="custom__container gap-5">
+                <div class="title-container">
+                    <h2 class="fw-semibold">Trending Collection</h2>
+                    <p class="">Checkout our weekly updated trending collection.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="border-0 d-flex flex-column gap-3">
+                            <a class="main-img" href="./pages/nft-page.html">
+                                <img src="./assets/img/trending-collection/DSGN_Animals_1.webp" class="card-img-top" alt="DSGN Animals primary image">
+                            </a>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="d-flex gap-3">
+                                    <a href="./pages/nft-page.html">
+                                        <img src="./assets/img/trending-collection/DSGN_Animals_2.webp" class="flex-fill" alt="DSGN Animals secondary image">
+                                    </a>
+                                    <a href="./pages/nft-page.html">
+                                        <img src="./assets/img/trending-collection/DSGN_Animals_3.webp" class="flex-fill" alt="DSGN Animals tertiary  image">
+                                    </a>
+                                    <a class="btn btn-action d-flex justify-content-center align-items-center flex-fill" href="./pages/nft-page.html" role="button"
+                                    style="width: 100px;">
+                                        <span class="secondaryFont fs__sm fw-bold">1025+</span>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <span class="title fw-semibold fs__sm">DSGN Animals</span>
+                                    <a class="owner d-flex gap-3 text-reset text-decoration-none" href="./pages/artist-page.html">
+                                        <img src="./assets/img/trending-collection/mrfox-pfp.webp" alt="">
+                                        <span class="fs__xs">MrFox</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-sm-12 d-none d-md-block">
+                        <div class="border-0 d-flex flex-column gap-3">
+                            <a class="main-img" href="./pages/nft-page.html">
+                                <img src="./assets/img/trending-collection/DSGN_Animals_1.webp" class="card-img-top" alt="DSGN Animals primary image">
+                            </a>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="d-flex gap-3">
+                                    <a href="./pages/nft-page.html">
+                                        <img src="./assets/img/trending-collection/DSGN_Animals_2.webp" class="flex-fill" alt="DSGN Animals secondary image">
+                                    </a>
+                                    <a href="./pages/nft-page.html">
+                                        <img src="./assets/img/trending-collection/DSGN_Animals_3.webp" class="flex-fill" alt="DSGN Animals tertiary  image">
+                                    </a>
+                                    <a class="btn btn-action d-flex justify-content-center align-items-center flex-fill" href="./pages/nft-page.html" role="button"
+                                    style="width: 100px;">
+                                        <span class="secondaryFont fs__sm fw-bold">1025+</span>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <span class="title fw-semibold fs__sm">DSGN Animals</span>
+                                    <a class="owner d-flex gap-3 text-reset text-decoration-none" href="./pages/artist-page.html">
+                                        <img src="./assets/img/trending-collection/mrfox-pfp.webp" alt="">
+                                        <span class="fs__xs">MrFox</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-sm-12 d-none d-xl-block">
+                        <div class="border-0 d-flex flex-column gap-3">
+                            <a class="main-img" href="./pages/nft-page.html">
+                                <img src="./assets/img/trending-collection/DSGN_Animals_1.webp" class="card-img-top" alt="DSGN Animals primary image">
+                            </a>
+                            <div class="d-flex flex-column gap-3">
+                                <div class="d-flex gap-3">
+                                    <a href="./pages/nft-page.html">
+                                        <img src="./assets/img/trending-collection/DSGN_Animals_2.webp" class="flex-fill" alt="DSGN Animals secondary image">
+                                    </a>
+                                    <a href="./pages/nft-page.html">
+                                        <img src="./assets/img/trending-collection/DSGN_Animals_3.webp" class="flex-fill" alt="DSGN Animals tertiary  image">
+                                    </a>
+                                    <a class="btn btn-action d-flex justify-content-center align-items-center flex-fill" href="./pages/nft-page.html" role="button"
+                                    style="width: 100px;">
+                                        <span class="secondaryFont fs__sm fw-bold">1025+</span>
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column gap-2">
+                                    <span class="title fw-semibold fs__sm">DSGN Animals</span>
+                                    <a class="owner d-flex gap-3 text-reset text-decoration-none" href="./pages/artist-page.html">
+                                        <img src="./assets/img/trending-collection/mrfox-pfp.webp" alt="">
+                                        <span class="fs__xs">MrFox</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-creators">
+            <div class="custom__container gap-5">
+                <div class="title-container d-flex gap-5">
+                    <div class="title d-flex flex-column gap-2">
+                        <h2 class="fw-semibold">Top Creators</h2>
+                        <p class="mb-0">Checkout Top Rated Creators on the NFT Marketplace</p>
+                    </div>
+                    <div class="view-rankings-btn mt-auto ms-auto">
+                        <a href="./pages/rankings.html" class="btn btn-outline-primary btn-outline-action d-none d-md-flex justify-content-center gap-3"
+                        style="--bs-btn-padding-y: 1.25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;">
+                            <img src="./assets/svg/RocketLaunchPurple.svg" alt="" style="width: 1.25rem; height: auto;">
+                            <span class="fw-semibold text-light text-nowrap">View Rankings</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                            <div class="bg-card p-4 rounded__20">
+                                <div class="d-flex flex-xl-column align-items-center gap-3">
+                                    <img src="./assets/img/top-creators/keepitreal-pfp.webp" alt="">
+                                    <div class="d-flex flex-column align-items-xl-center gap-1">
+                                        <span class="creator-name fw-semibold fs__sm">Keepitreal</span>
+                                        <div class="total-slaes d-flex gap-2">
+                                            <span class="text-caption">Total Sales: </span>
+                                            <span class="secondaryFont">34.53 ETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                            <div class="bg-card p-4 rounded__20">
+                                <div class="d-flex flex-xl-column align-items-center gap-3">
+                                    <img src="./assets/img/top-creators/keepitreal-pfp.webp" alt="">
+                                    <div class="d-flex flex-column align-items-xl-center gap-1">
+                                        <span class="creator-name fw-semibold fs__sm">Keepitreal</span>
+                                        <div class="total-slaes d-flex gap-2">
+                                            <span class="text-caption">Total Sales: </span>
+                                            <span class="secondaryFont">34.53 ETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                            <div class="bg-card p-4 rounded__20">
+                                <div class="d-flex flex-xl-column align-items-center gap-3">
+                                    <img src="./assets/img/top-creators/keepitreal-pfp.webp" alt="">
+                                    <div class="d-flex flex-column align-items-xl-center gap-1">
+                                        <span class="creator-name fw-semibold fs__sm">Keepitreal</span>
+                                        <div class="total-slaes d-flex gap-2">
+                                            <span class="text-caption">Total Sales: </span>
+                                            <span class="secondaryFont">34.53 ETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                            <div class="bg-card p-4 rounded__20">
+                                <div class="d-flex flex-xl-column align-items-center gap-3">
+                                    <img src="./assets/img/top-creators/keepitreal-pfp.webp" alt="">
+                                    <div class="d-flex flex-column align-items-xl-center gap-1">
+                                        <span class="creator-name fw-semibold fs__sm">Keepitreal</span>
+                                        <div class="total-slaes d-flex gap-2">
+                                            <span class="text-caption">Total Sales: </span>
+                                            <span class="secondaryFont">34.53 ETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-sm-12">
+                        <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                            <div class="bg-card p-4 rounded__20">
+                                <div class="d-flex flex-xl-column align-items-center gap-3">
+                                    <img src="./assets/img/top-creators/keepitreal-pfp.webp" alt="">
+                                    <div class="d-flex flex-column align-items-xl-center gap-1">
+                                        <span class="creator-name fw-semibold fs__sm">Keepitreal</span>
+                                        <div class="total-slaes d-flex gap-2">
+                                            <span class="text-caption">Total Sales: </span>
+                                            <span class="secondaryFont">34.53 ETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-none d-md-block">
+                        <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                            <div class="bg-card p-4 rounded__20">
+                                <div class="d-flex flex-xl-column align-items-center gap-3">
+                                    <img src="./assets/img/top-creators/keepitreal-pfp.webp" alt="">
+                                    <div class="d-flex flex-column align-items-xl-center gap-1">
+                                        <span class="creator-name fw-semibold fs__sm">Keepitreal</span>
+                                        <div class="total-slaes d-flex gap-2">
+                                            <span class="text-caption">Total Sales: </span>
+                                            <span class="secondaryFont">34.53 ETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-none d-xl-block">
+                        <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                            <div class="bg-card p-4 rounded__20">
+                                <div class="d-flex flex-xl-column align-items-center gap-3">
+                                    <img src="./assets/img/top-creators/keepitreal-pfp.webp" alt="">
+                                    <div class="d-flex flex-column align-items-xl-center gap-1">
+                                        <span class="creator-name fw-semibold fs__sm">Keepitreal</span>
+                                        <div class="total-slaes d-flex gap-2">
+                                            <span class="text-caption">Total Sales: </span>
+                                            <span class="secondaryFont">34.53 ETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-none d-xl-block">
+                        <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                            <div class="bg-card p-4 rounded__20">
+                                <div class="d-flex flex-xl-column align-items-center gap-3">
+                                    <img src="./assets/img/top-creators/keepitreal-pfp.webp" alt="">
+                                    <div class="d-flex flex-column align-items-xl-center gap-1">
+                                        <span class="creator-name fw-semibold fs__sm">Keepitreal</span>
+                                        <div class="total-slaes d-flex gap-2">
+                                            <span class="text-caption">Total Sales: </span>
+                                            <span class="secondaryFont">34.53 ETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-none d-xl-block">
+                        <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                            <div class="bg-card p-4 rounded__20">
+                                <div class="d-flex flex-xl-column align-items-center gap-3">
+                                    <img src="./assets/img/top-creators/keepitreal-pfp.webp" alt="">
+                                    <div class="d-flex flex-column align-items-xl-center gap-1">
+                                        <span class="creator-name fw-semibold fs__sm">Keepitreal</span>
+                                        <div class="total-slaes d-flex gap-2">
+                                            <span class="text-caption">Total Sales: </span>
+                                            <span class="secondaryFont">34.53 ETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-none d-xl-block">
+                        <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                            <div class="bg-card p-4 rounded__20">
+                                <div class="d-flex flex-xl-column align-items-center gap-3">
+                                    <img src="./assets/img/top-creators/keepitreal-pfp.webp" alt="">
+                                    <div class="d-flex flex-column align-items-xl-center gap-1">
+                                        <span class="creator-name fw-semibold fs__sm">Keepitreal</span>
+                                        <div class="total-slaes d-flex gap-2">
+                                            <span class="text-caption">Total Sales: </span>
+                                            <span class="secondaryFont">34.53 ETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-none d-xl-block">
+                        <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                            <div class="bg-card p-4 rounded__20">
+                                <div class="d-flex flex-xl-column align-items-center gap-3">
+                                    <img src="./assets/img/top-creators/keepitreal-pfp.webp" alt="">
+                                    <div class="d-flex flex-column align-items-xl-center gap-1">
+                                        <span class="creator-name fw-semibold fs__sm">Keepitreal</span>
+                                        <div class="total-slaes d-flex gap-2">
+                                            <span class="text-caption">Total Sales: </span>
+                                            <span class="secondaryFont">34.53 ETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 col-sm-12 d-none d-xl-block">
+                        <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                            <div class="bg-card p-4 rounded__20">
+                                <div class="d-flex flex-xl-column align-items-center gap-3">
+                                    <img src="./assets/img/top-creators/keepitreal-pfp.webp" alt="">
+                                    <div class="d-flex flex-column align-items-xl-center gap-1">
+                                        <span class="creator-name fw-semibold fs__sm">Keepitreal</span>
+                                        <div class="total-slaes d-flex gap-2">
+                                            <span class="text-caption">Total Sales: </span>
+                                            <span class="secondaryFont">34.53 ETH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="./pages/rankings.html" class="btn btn-outline-primary btn-outline-action d-flex d-md-none justify-content-center gap-3"
+                style="--bs-btn-padding-y: 1.25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;">
+                    <img src="./assets/svg/RocketLaunchPurple.svg" alt="" style="width: 1.25rem; height: auto;">
+                    <span class="fw-semibold text-light text-nowrap">View Rankings</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="browse-categories">
+            <div class="custom__container gap-5">
+                <div class="title-container">
+                    <h2 class="fw-semibold">Browse Categories</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-xl-3 col-md-3 col-6">
+                        <a class="d-flex flex-column text-reset text-decoration-none" href="./pages/marketplace.html">
+                            <img src="./assets/img/browse-categories/art.webp" class="card-img-top" alt="...">
+                            <div class="bg-card p-4 rounded__bottom__20">
+                                <span class="card-text fw-semibold fs__sm">Art</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-3 col-6">
+                        <a class="d-flex flex-column text-reset text-decoration-none" href="./pages/marketplace.html">
+                            <img src="./assets/img/browse-categories/art.webp" class="card-img-top" alt="...">
+                            <div class="bg-card p-4 rounded__bottom__20">
+                                <span class="card-text fw-semibold fs__sm">Art</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-3 col-6">
+                        <a class="d-flex flex-column text-reset text-decoration-none" href="./pages/marketplace.html">
+                            <img src="./assets/img/browse-categories/art.webp" class="card-img-top" alt="...">
+                            <div class="bg-card p-4 rounded__bottom__20">
+                                <span class="card-text fw-semibold fs__sm">Art</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-3 col-6">
+                        <a class="d-flex flex-column text-reset text-decoration-none" href="./pages/marketplace.html">
+                            <img src="./assets/img/browse-categories/art.webp" class="card-img-top" alt="...">
+                            <div class="bg-card p-4 rounded__bottom__20">
+                                <span class="card-text fw-semibold fs__sm">Art</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-3 col-6">
+                        <a class="d-flex flex-column text-reset text-decoration-none" href="./pages/marketplace.html">
+                            <img src="./assets/img/browse-categories/art.webp" class="card-img-top" alt="...">
+                            <div class="bg-card p-4 rounded__bottom__20">
+                                <span class="card-text fw-semibold fs__sm">Art</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-3 col-6">
+                        <a class="d-flex flex-column text-reset text-decoration-none" href="./pages/marketplace.html">
+                            <img src="./assets/img/browse-categories/art.webp" class="card-img-top" alt="...">
+                            <div class="bg-card p-4 rounded__bottom__20">
+                                <span class="card-text fw-semibold fs__sm">Art</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-3 col-6">
+                        <a class="d-flex flex-column text-reset text-decoration-none" href="./pages/marketplace.html">
+                            <img src="./assets/img/browse-categories/art.webp" class="card-img-top" alt="...">
+                            <div class="bg-card p-4 rounded__bottom__20">
+                                <span class="card-text fw-semibold fs__sm">Art</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-3 col-md-3 col-6">
+                        <a class="d-flex flex-column text-reset text-decoration-none" href="./pages/marketplace.html">
+                            <img src="./assets/img/browse-categories/art.webp" class="card-img-top" alt="...">
+                            <div class="bg-card p-4 rounded__bottom__20">
+                                <span class="card-text fw-semibold fs__sm">Art</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="discover-more-nfts">
+            <div class="custom__container gap-5">
+                <div class="title-container d-flex gap-5">
+                    <div class="title d-flex flex-column gap-2">
+                        <h2 class="fw-semibold">Discover More Nfts</h2>
+                        <p class="mb-0">Explore New Trending Nfts</p>
+                    </div>
+                    <div class="view-rankings-btn mt-auto ms-auto">
+                        <a href="./pages/marketplace.html" class="btn btn-outline-primary btn-outline-action d-none d-md-flex justify-content-center gap-3"
+                        style="--bs-btn-padding-y: 1.25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;">
+                            <img src="./assets/svg/Eye.svg" alt="" style="width: 1.25rem; height: auto;">
+                            <spa class="fw-semibold text-light text-nowrap">See All</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <a href="./pages/nft-page.html" class="text-reset text-decoration-none">
+                            <img src="./assets/img/discover-more-nfts/distant-galaxy.webp" class="card-img-top" alt="...">
+                            <div class="card-body bg-card p-4 rounded__bottom__20 d-flex flex-column gap-4">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="title fw-semibold fs__sm">Distant Galaxy</span>
+                                    <div class="owner d-flex gap-3">
+                                        <img src="./assets/img/discover-more-nfts/moondancer-pfp.webp" alt="">
+                                        <span class="secondaryFont fs__xs">MoonDancer</span>
+                                    </div>
+                                </div>
+                                <div class="overview d-flex justify-content-between">
+                                    <div class="price d-flex flex-column">
+                                        <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Price</span>
+                                        <span class="secondaryFont">1.63 ETH</span>
+                                    </div>
+                                    <div class="highest-bid d-flex flex-column">
+                                        <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Highest Bid</span>
+                                        <span class="secondaryFont">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <a href="./pages/nft-page.html" class="text-reset text-decoration-none">
+                            <img src="./assets/img/discover-more-nfts/distant-galaxy.webp" class="card-img-top" alt="...">
+                            <div class="card-body bg-card p-4 rounded__bottom__20 d-flex flex-column gap-4">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="title fw-semibold fs__sm">Distant Galaxy</span>
+                                    <div class="owner d-flex gap-3">
+                                        <img src="./assets/img/discover-more-nfts/moondancer-pfp.webp" alt="">
+                                        <span class="secondaryFont fs__xs">MoonDancer</span>
+                                    </div>
+                                </div>
+                                <div class="overview d-flex justify-content-between">
+                                    <div class="price d-flex flex-column">
+                                        <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Price</span>
+                                        <span class="secondaryFont">1.63 ETH</span>
+                                    </div>
+                                    <div class="highest-bid d-flex flex-column">
+                                        <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Highest Bid</span>
+                                        <span class="secondaryFont">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-xl-4 col-md-6 col-sm-12 d-md-none d-xl-block">
+                        <a href="./pages/nft-page.html" class="text-reset text-decoration-none">
+                            <img src="./assets/img/discover-more-nfts/distant-galaxy.webp" class="card-img-top" alt="...">
+                            <div class="card-body bg-card p-4 rounded__bottom__20 d-flex flex-column gap-4">
+                                <div class="d-flex flex-column gap-1">
+                                    <span class="title fw-semibold fs__sm">Distant Galaxy</span>
+                                    <div class="owner d-flex gap-3">
+                                        <img src="./assets/img/discover-more-nfts/moondancer-pfp.webp" alt="">
+                                        <span class="secondaryFont fs__xs">MoonDancer</span>
+                                    </div>
+                                </div>
+                                <div class="overview d-flex justify-content-between">
+                                    <div class="price d-flex flex-column">
+                                        <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Price</span>
+                                        <span class="secondaryFont">1.63 ETH</span>
+                                    </div>
+                                    <div class="highest-bid d-flex flex-column">
+                                        <span class="secondaryFont text-caption" style="font-size: 0.75rem;">Highest Bid</span>
+                                        <span class="secondaryFont">0.33 wETH</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="./pages/marketplace.html" class="btn btn-outline-primary btn-outline-action d-flex d-md-none justify-content-center gap-3"
+                style="--bs-btn-padding-y: 1.25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;">
+                    <img src="./assets/svg/Eye.svg" alt="" style="width: 1.25rem; height: auto;">
+                    <spa class="fw-semibold text-light text-nowrap">See All</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="nft-highlight">
+            <div class="custom__container">
+                <div class="highlight-body d-flex justify-content-center justify-content-xl-between gap-5">
+                    <div class="d-flex flex-column gap-4 align-items-start">
+                        <a href="./pages/artist-page.html" class="text-reset text-decoration-none">
+                            <div class="owner d-flex gap-3 bg-card px-3 py-2 rounded__20">
+                                <img src="./assets/img/discover-more-nfts/moondancer-pfp.webp" alt="">
+                                <span class="secondaryFont fs__xs">Shroomie</span>
+                            </div>
+                        </a>
+
+                        <h2 class="fw-semibold" style="font-size: 3.1875rem;">
+                            <span>Magic<span class="d-block d-md-none"></span> Mushrooms</span>
+                        </h2>
+                        
+                        <div class="d-flex rounded__20 p-4 d-block d-md-none align-self-stretch justify-content-center"
+                        style="background-color: rgba(59, 59, 59, 0.5);">
+                            <div class="d-flex flex-column gap-1">
+                                <p class="mb-0 secondaryFont" style="font-size: 0.75rem;">Auction ends in:</p>
+                                <div class="time d-flex gap-2">
+                                    <div class="hours d-flex flex-column">
+                                        <span class="secondaryFont fw-bold fs__lg" style="line-height: 120%;">59</span>
+                                        <span class="secondaryFont" style="font-size: 0.75rem;">Hours</span>
+                                    </div>
+                                    <span class="secondaryFont fw-bold fs__md" style="line-height: 150%;">:</span>
+                                    <div class="minutes d-flex flex-column">
+                                        <span class="secondaryFont fw-bold fs__lg" style="line-height: 120%;">59</span>
+                                        <span class="secondaryFont" style="font-size: 0.75rem;">Minutes</span>
+                                    </div>
+                                    <span class="secondaryFont fw-bold fs__md" style="line-height: 150%;">:</span>
+                                    <div class="seconds d-flex flex-column">
+                                        <span class="secondaryFont fw-bold fs__lg" style="line-height: 120%;">59</span>
+                                        <span class="secondaryFont" style="font-size: 0.75rem;">Seconds</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="./pages/nft-page.html" class="btn btn-light rounded__20 d-flex justify-content-center gap-3 align-self-stretch align-self-md-start"
+                        style="--bs-btn-padding-y: 1.25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;">
+                            <img src="./assets/svg/Eye.svg" alt="">
+                            <span class="fw-semibold" href="#" role="button">See NFT</span>
+                        </a>
+                    </div>
+
+
+                    <div class="d-none d-md-flex flex-column align-self-end rounded__20 p-4 gap-1"
+                    style="background-color: rgba(59, 59, 59, 0.5);">
+                        <p class="mb-0 secondaryFont" style="font-size: 0.75rem;">Auction ends in:</p>
+                        <div class="time d-flex gap-2">
+                            <div class="hours d-flex flex-column">
+                                <span class="secondaryFont fw-bold fs__lg" style="line-height: 120%;">59</span>
+                                <span class="secondaryFont" style="font-size: 0.75rem;">Hours</span>
+                            </div>
+                            <span class="secondaryFont fw-bold fs__md" style="line-height: 150%;">:</span>
+                            <div class="minutes d-flex flex-column">
+                                <span class="secondaryFont fw-bold fs__lg" style="line-height: 120%;">59</span>
+                                <span class="secondaryFont" style="font-size: 0.75rem;">Minutes</span>
+                            </div>
+                            <span class="secondaryFont fw-bold fs__md" style="line-height: 150%;">:</span>
+                            <div class="seconds d-flex flex-column">
+                                <span class="secondaryFont fw-bold fs__lg" style="line-height: 120%;">59</span>
+                                <span class="secondaryFont" style="font-size: 0.75rem;">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="custom__container gap-5">
+                <div class="title-container d-flex">
+                    <div class="title d-flex flex-column gap-2">
+                        <h2 class="fw-semibold">How It Works</h2>
+                        <p class="mb-0">Find Out How To Get Started</p>
+                    </div>
+                </div>
+
+                <div class="row g-4 align-self-stretch">
+                    <div class="col-xl-4 col-md-4 col-sm-12">
+                        <div class="d-flex flex-md-column h-100 bg-card rounded__20 gap-3 px-xl-4 pb-xl-4 pt-xl-1 px-md-3 pb-md-3 pt-md-1 p-3">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/how-it-works/setup-your-wallet.webp" class="img-fluid" alt="...">
+                            </div>
+                            <div class="card-body text-md-center d-flex flex-column justify-content-center gap-1">
+                                <h3 class="fs__sm fw-semibold">Setup Your Wallet</h3>
+                                <p class="mb-0">Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-4 col-sm-12">
+                        <div class="d-flex flex-md-column h-100 bg-card rounded__20 gap-3 px-xl-4 pb-xl-4 pt-xl-1 px-md-3 pb-md-3 pt-md-1 p-3">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/how-it-works/setup-your-wallet.webp" class="img-fluid" alt="...">
+                            </div>
+                            <div class="card-body text-md-center d-flex flex-column justify-content-center gap-1">
+                                <h3 class="fs__sm fw-semibold">Create Collection</h3>
+                                <p class="mb-0">Upload your work and setup your collection. Add a description, social links and floor price.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-md-4 col-sm-12">
+                        <div class="d-flex flex-md-column h-100 bg-card rounded__20 gap-3 px-xl-4 pb-xl-4 pt-xl-1 px-md-3 pb-md-3 pt-md-1 p-3">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/how-it-works/setup-your-wallet.webp" class="img-fluid" alt="...">
+                            </div>
+                            <div class="card-body text-md-center d-flex flex-column justify-content-center gap-1">
+                                <h3 class="fs__sm fw-semibold">Start Earning</h3>
+                                <p class="mb-0">Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe-widget">
+            <div class="custom__container">
+                <div class="bg-card rounded__20">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-xl-6 col-md-6 col-sm-12">
+                            <img src="./assets/Photo1.png" class="d-none d-xl-block" alt="">
+                            <img src="./assets/Photo2.png" class="d-none d-md-block d-xl-none" alt="">
+                            <img src="./assets/Photo3.png" class="d-sm-block d-md-none w-100" alt="">
+                        </div>
+                        <div class="col-xl-6 col-md-6 col-sm-12 d-flex flex-column gap-4">
+                            <div>
+                                <h2 class="fw-semibold">Join our weekly digest</h2>
+                                <p class="">Get exclusive promotions & updates straight to your inbox.</p>
+                            </div>
+                            <form class="position-relative w-100 d-flex flex-column gap-3" style="max-width: 420px;">
+                                <input type="email" class="newsletter__signup__input form__control bg-light dark-text-placeholder text-background rounded__20 w-100"
+                                id="exampleFormControlInput1" placeholder="Enter your email here">
+                                <button type="submit" class="btn btn-action position__xl__absolute end-0 top-0 bottom-0 d-flex gap-2 align-items-center justify-content-center rounded__20 w__md__100"
+                                style="--bs-btn-padding-x: 3rem;">
+                                    <img src="./assets/svg/EnvelopeSimple.svg" alt="" style="width: 1.25rem; height: auto;">
+                                    <span class="newsletter__signup__btn fw-semibold">Subscribe</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-footer bg-card">
+        <div class="custom__container">
+            <div class="row g-md-4 g-sm-4 px-4">
+                <div class="col-xl-4 col-md-12 col-sm-12 d-flex flex-column gap-4">
+                    <div class="icon d-flex align-items-center gap-3">
+                        <img src="./assets/svg/Storefront.svg" alt="Storefront logo">
+                        <img src="./assets/svg/NFT Marketplace.svg" alt="NFT Marketplace logo">
+                    </div>
+                    <div class="d-flex flex-column gap-3">
+                        <p class="mb-0">NFT marketplace UI created with Anima for Figma.</p>
+                        <div class="d-flex flex-column gap-2">
+                            <p class="mb-0">Join our community</p>
+                            <div class="d-flex gap-2">
+                                <a href="#"><img src="./assets/svg/DiscordLogo.svg" alt=""></a>
+                                <a href="#"><img src="./assets/svg/YoutubeLogo.svg" alt=""></a>
+                                <a href="#"><img src="./assets/svg/TwitterLogo.svg" alt=""></a>
+                                <a href="#"><img src="./assets/svg/InstagramLogo.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-12 col-sm-12 d-flex flex-column gap-3">
+                    <h4 class="secondaryFont fw-bold text-light">Explore</h4>
+                    <div id="navbarSupportedContent">
+                        <ul class="navbar-nav d-flex flex-column gap-3">
+                            <li class="nav-item">
+                                <a class="text-reset text-decoration-none" aria-current="page" href="#">Marketplace</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-reset text-decoration-none" href="#">Rankings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-reset text-decoration-none" href="#">Connect a wallet</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xl-5 col-md-12 col-sm-12 d-flex flex-column gap-3">
+                    <h4 class="secondaryFont fw-bold text-light">Join our weekly digest</h4>
+                    <div class="d-flex flex-column gap-3">
+                        <p class="mb-0">Get exclusive promotions & updates straight to your inbox.</p>
+                        <form class="position-relative w-100 d-flex flex-column gap-3" style="max-width: 420px;">
+                            <input type="email" class="newsletter__signup__input form__control bg-light dark-text-placeholder text-background rounded__20 w-100"
+                            id="exampleFormControlInput1" placeholder="Enter your email here">
+                            <button type="submit" class="btn btn-action position__md__absolute end-0 top-0 bottom-0 d-flex gap-2 align-items-center justify-content-center rounded__20 w__sm__100"
+                            style="--bs-btn-padding-x: 3rem;">
+                                <img src="./assets/svg/EnvelopeSimple.svg" class="d-md-none" alt="" style="width: 1.25rem; height: auto;">
+                                <span class="newsletter__signup__btn fw-semibold">Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/svg/Divider.svg" class="pt-4 d-none d-md-block" alt="Divider">
+            <img src="./assets/svg/Divider-Mobile.svg" class="pt-4 d-block d-md-none" alt="Divider For Mobile">
+            <p class="mb-0 pt-3" style="font-size: 0.75rem;"">Ⓒ NFT Market. Use this template freely.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap 5.3.7 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,452 @@
+
+/*Start Base Styles */
+:root {
+    --primaryBackground: #2B2B2B;
+    --SecondaryBackground: #3B3B3B;
+    --caption: #858584;
+    --action: #A259FF;
+    --blueAccent: #377DF7;
+    --redAccent: #FF7262;
+    --primaryFont: "Work Sans", sans-serif;
+    --secondaryFont: "Space Mono", monospace;
+    --fs-xxs: 0.75rem;
+    --fs-xs: 1rem;
+    --fs-sm: 1.375rem;
+    --fs-md: 1.75rem;
+    --fs-lg: 2.375rem;
+    --fs-xl: 3.1875rem;
+    --fs-xxl: 4.1875rem;
+}
+
+[data-bs-theme=dark],body {
+    background-color: var(--primaryBackground);
+    font-family: var(--primaryFont);
+}
+/*End Base Styles */
+
+/* Start Custom Container */
+.custom__container {
+    display: flex;
+     flex-direction: column;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 576px) {
+    .custom__container {
+        max-width: 339px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .custom__container {
+        max-width: 339px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .custom__container {
+        max-width: 714px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .custom__container {
+        max-width: 1074px;
+    }
+}
+/* End Custom Container */
+
+/* Start Colors */
+.text-background {
+    color: var(--primaryBackground) !important;
+}
+
+.text-caption {
+    color: var(--caption);
+}
+
+.text-footer {
+    color: #CCCCCC;
+}
+
+.bg-background {
+    background-color: var(--primaryBackground);
+}
+
+.bg-card {
+    background-color: var(--SecondaryBackground);
+}
+
+.dark-text-placeholder::placeholder  {
+    color: var(--primaryBackground);
+}
+/* End Colors */
+
+/* Start Font */
+.secondaryFont {
+    font-family: var(--secondaryFont);
+}
+
+.fs__xxs {
+    font-size: var(--fs-xxs);
+}
+
+.fs__xs {
+    font-size: var(--fs-xs);
+}
+
+.fs__sm {
+    font-size: var(--fs-sm);
+}
+
+.fs__md {
+    font-size: var(--fs-md);
+}
+
+.fs__lg {
+    font-size: var(--fs-lg);
+}
+
+.fs__xl {
+    font-size: var(--fs-xl);
+}
+
+.fs__xxl {
+    font-size: var(--fs-xxl);
+}
+/* End Font */
+
+/* Start Title Container */
+.title-container h2 {
+    font-size: var(--fs-lg);
+}
+
+.title-container p {
+    font-size: var(--fs-sm);
+}
+
+@media screen and (max-width:1200px) {
+    .title-container h2 {
+        font-size: var(--fs-md);
+    }
+
+    .title-container p {
+        font-size: var(--fs-xs)
+    }
+}
+/* End Title Container */
+
+/* Start Buttons */
+.btn-action {
+    background-color: var(--action);
+    border-radius: 20px
+}
+
+.btn-outline-action {
+    color: var(--action);
+    border-color: var(--action);
+    border-radius: 20px
+}
+/* End Buttons */
+
+/* Start Hero */
+.hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.hero h1 {
+    font-size: var(--fs-xxl);
+}
+
+.hero p {
+    font-size: var(--fs-sm)
+}
+
+.hero .value {
+    font-size: var(--fs-md);
+}
+
+.hero .label {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:1200px) {
+    .hero h1 {
+        font-size: var(--fs-lg);
+    }
+
+    .hero p {
+        font-size: var(--fs-xs)
+    }
+
+    .hero .value {
+        font-size: var(--fs-sm);
+    }
+
+    .hero .label {
+        font-size: var(--fs-xs);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+/* End Hero */
+
+/* Start Trending Collection */
+.trending-collection {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width:1200px) {
+    .trending-collection {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+/* End Trending Collection */
+
+/* Start Top Creators*/
+.top-creators {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width:1200px) {
+    .top-creators {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+/* End Top Creators*/
+
+/* Start Browse Categories*/
+.browse-categories {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width:1200px) {
+    .browse-categories {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+/* End Browse Categories*/
+
+/* Start Discover More NFTs*/
+.discover-more-nfts {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width:1200px) {
+    .discover-more-nfts {
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .discover-more-nfts {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+}
+/* End Discover More NFTs*/
+
+/* Start NFT Highlight Section */
+.nft-highlight {
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .nft-highlight {
+        background-image: url(./../img/nft-highlight/nft-highlight-desktop.webp);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nft-highlight {
+        background-image: url(./../img/nft-highlight/nft-highlight-tablet.webp);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .highlight-body {
+        padding-top: 360px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .highlight-body {
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+}
+/* End NFT Highlight Section */
+
+/* Start How It Works*/
+.how-it-works {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.how-it-works .card-body h3 {
+    font-size: var(--fs-sm);
+}
+
+.how-it-works .card-body p {
+    font-size: var(--fs-xs);
+}
+
+@media screen and (max-width:1200px) {
+    .how-it-works {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .how-it-works .card-body h3 {
+        font-size: var(--fs-xs);
+    }
+    .how-it-works .card-body p {
+        font-size: var(--fs-xxs);
+    }
+}
+/* End How It Works*/
+
+/* Start Subscribe Widget */
+.subscribe-widget {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.subscribe-widget .bg-card {
+    padding: 3.75rem;
+}
+
+.subscribe-widget h2 {
+    font-size: var(--fs-lg);
+}
+
+.subscribe-widget p {
+    font-size: var(--fs-sm);
+}
+
+@media screen and (max-width:1200px) {
+    .subscribe-widget h2 {
+        font-size: 1.75rem;
+    }
+    .subscribe-widget p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .subscribe-widget {
+        padding-bottom: 40px;
+    }
+    .subscribe-widget .bg-card {
+        background-color: transparent;
+        padding: 0;
+    }
+}
+/* End Subscribe Widget */
+
+/* Start Newsletter Signup */
+.newsletter__signup__input {
+    padding: 1.1875rem 14rem 1.1875rem 1.25rem;
+}
+
+.form__control:focus {
+  border-color: var(--action);
+  box-shadow: 0 0 0 .25rem rgba(162, 89, 255, .25);
+}
+
+@media screen and (max-width:768px) {
+    .newsletter__signup__input {
+        padding: 0.75rem 1.25rem;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .subscribe-widget .newsletter__signup__input {
+        padding: 0.75rem 1.25rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .newsletter__signup__btn {
+        padding: 0.438rem 0;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .subscribe-widget .newsletter__signup__btn {
+        padding: 0.438rem 0;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .position__md__absolute {
+        position: absolute;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .position__xl__absolute {
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .w__sm__100 {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .w__md__100 {
+        width: 100% !important;
+    }
+}
+/* End Newsletter Signup */
+
+/* Start Footer */
+footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+footer .newsletter__signup__input {
+    padding: 1.1875rem 12rem 1.1875rem 1.25rem;
+}
+
+@media screen and (max-width:768px) {
+    footer .newsletter__signup__input {
+        padding: 0.75rem 1.25rem;
+    }
+}
+/* End Footer */
+
+/* Start Rounded */
+.rounded__20 {
+    border-radius: 20px;
+}
+
+.rounded__bottom__20 {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+/* End Rounded */

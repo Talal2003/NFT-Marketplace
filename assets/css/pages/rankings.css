@@ -1,0 +1,182 @@
+.headline {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.headline h2 {
+    font-size: var(--fs-xl);
+}
+
+.headline p {
+    font-size: var(--fs-sm);
+}
+
+.tab-bar {
+    padding-top: 0.625rem;
+}
+
+.tab-bar .nav-item {
+    flex: 1 1 0;
+}
+
+.tab-bar .nav-link {
+    color: var(--caption);
+    padding: 0.875rem 0;
+    border: none;
+}
+
+.tab-bar .nav-link.active {
+    background-image: url(./../../svg/Tab.svg);
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+}
+
+.tab-bar .title {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.rankings-list {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.rankings-list .table-header {
+    border: 1px solid var(--SecondaryBackground);
+}
+
+.rankings-list .header-container {
+    padding: 0.75rem 1.25rem;
+}
+
+.rankings-list .header-num {
+    font-size: var(--fs-xs);
+    font-family: var(--secondaryFont);
+    width: 30px;
+}
+
+.rankings-list .header-name {
+    font-size: var(--fs-xs);
+    font-family: var(--secondaryFont);
+}
+
+.rankings-list .header-overview {
+    font-size: var(--fs-xs);
+    font-family: var(--secondaryFont);
+}
+
+.rankings-list .header-overview span {
+    width: 160px;
+}
+
+.rankings-list .card-container {
+    padding: 0.75rem 1.25rem;
+}
+
+.rankings-list .creator-num {
+    background-color: var(--primaryBackground);
+    font-size: var(--fs-xs);
+    font-family: var(--secondaryFont);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.rankings-list .creator-name {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.rankings-list .overview {
+    font-size: var(--fs-xs);
+    font-family: var(--secondaryFont);
+}
+
+.rankings-list .overview span {
+    width: 160px;
+}
+
+@media screen and (max-width:1200px) {
+    .headline {
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
+    }
+    .headline h2 {
+        font-size: var(--fs-lg);
+    }
+    .headline p {
+        font-size: var(--fs-xs);
+    }
+    .tab-bar .nav-link {
+        padding: 1.15625rem 0;
+    }
+    .tab-bar .title {
+        font-size: var(--fs-xs);
+    }
+    .rankings-list .header-overview span {
+        width: 100px;
+    }
+    .rankings-list .card-container {
+        padding: 0.90625rem 1.25rem;
+    }
+    .rankings-list .creator-num {
+        background-color: transparent;
+        width: 24px;
+        height: 24px;
+    }
+    .creator-avatar {
+        max-width: 24px;
+    }
+    .rankings-list .overview span {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .headline {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .headline h2 {
+        font-size: var(--fs-md);
+    }
+    .tab-bar .nav-link {
+        padding: 1.1875rem 0;
+    }
+
+    .rankings-list .header-container {
+        padding: 0.75rem 0.9375rem 0.75rem 0.625rem;
+    }
+    .rankings-list .header-num {
+        width: 24px;
+    }
+    .rankings-list .header-name {
+        font-size: var(--fs-xxs);
+    }
+    .rankings-list .header-overview {
+        font-size: var(--fs-xxs);
+    }
+
+    .rankings-list .header-overview span {
+        width: 80px;
+    }
+
+    .rankings-list .card-container {
+        padding: 0.8125rem 0.9375rem 0.8125rem 0.625rem;
+    }
+    .rankings-list .creator-num {
+        font-size: var(--fs-xxs);
+    }
+    .rankings-list .creator-name {
+        font-size: var(--fs-xs);
+        font-weight: 400;
+    }
+    .rankings-list .overview {
+        font-size: var(--fs-xxs);
+    }
+
+    .rankings-list .overview span {
+        width: 80px;
+    }
+}
