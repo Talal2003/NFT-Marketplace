@@ -23,6 +23,7 @@
     color: var(--caption);
     padding: 0.875rem 0;
     border: none;
+    transform: none;
 }
 
 .tab-bar .nav-link.active {
