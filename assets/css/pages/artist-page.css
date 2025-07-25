@@ -43,6 +43,9 @@
 
 .tab-bar {
     padding-top: 0.625rem;
+    border-color: var(--SecondaryBackground);
+    border-top-style: solid;
+    border-top-width: 1px;
 }
 
 .tab-bar .nav-item {

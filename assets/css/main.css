@@ -313,6 +313,15 @@
         padding-bottom: 40px;
     }
 }
+
+.top-creators .creator-num {
+    background-color: var(--primaryBackground);
+    font-size: var(--fs-xs);
+    font-family: var(--secondaryFont);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
 /* End Top Creators*/
 
 /* Start Browse Categories*/
@@ -478,6 +487,9 @@
 footer {
     padding-top: 40px;
     padding-bottom: 40px;
+    border-color: var(--primaryBackground);
+    border-top-style: solid;
+    border-top-width: 2px;
 }
 
 footer .newsletter__signup__input {
