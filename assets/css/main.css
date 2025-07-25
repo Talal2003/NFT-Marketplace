@@ -62,6 +62,68 @@
 }
 /* End Custom Container */
 
+/* Start Custom Container Fluid */
+@media screen and (max-width: 768px) {
+    .custom__container__fluid {
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .custom__container__fluid {
+        padding-left: 3.125rem;
+        padding-right: 3.125rem;
+    }
+}
+/* End Custom Container Fluid */
+
+/* Start Title Container */
+.title-container h2 {
+    font-size: var(--fs-lg);
+}
+
+.title-container p {
+    font-size: var(--fs-sm);
+}
+
+@media screen and (max-width:1200px) {
+    .title-container h2 {
+        font-size: var(--fs-md);
+    }
+
+    .title-container p {
+        font-size: var(--fs-xs)
+    }
+}
+/* End Title Container */
+
+/* Start Responsive Utilities */
+@media screen and (min-width:768px) {
+    .position__md__absolute {
+        position: absolute;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .position__xl__absolute {
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .w__sm__100 {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .w__md__100 {
+        width: 100% !important;
+    }
+}
+/* End Responsive Utilities */
+
 /* Start Colors */
 .text-background {
     color: var(--primaryBackground) !important;
@@ -122,38 +184,56 @@
 }
 /* End Font */
 
-/* Start Title Container */
-.title-container h2 {
-    font-size: var(--fs-lg);
-}
-
-.title-container p {
-    font-size: var(--fs-sm);
-}
-
-@media screen and (max-width:1200px) {
-    .title-container h2 {
-        font-size: var(--fs-md);
-    }
-
-    .title-container p {
-        font-size: var(--fs-xs)
-    }
-}
-/* End Title Container */
-
 /* Start Buttons */
+.btn {
+    --bs-btn-padding-y: 1.25rem;
+    --bs-btn-padding-x: 3.125rem;
+}
+
 .btn-action {
     background-color: var(--action);
-    border-radius: 20px
 }
 
 .btn-outline-action {
     color: var(--action);
     border-color: var(--action);
-    border-radius: 20px
+}
+
+.sign-up-btn {
+    background-color: var(--action);
+    --bs-btn-padding-y: 1.25rem;
+    --bs-btn-padding-x: 1.875rem;
 }
 /* End Buttons */
+
+/* Start Rounded */
+.rounded__20 {
+    border-radius: 20px;
+}
+
+.rounded__bottom__20 {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+/* End Rounded */
+
+/* Start Header */
+.navbar {
+    padding-top: 2.125rem;
+    padding-bottom: 2.125rem;
+}
+
+.nav__item {
+    padding: 0 1.25rem;
+}
+
+@media screen and (max-width:1200px) {
+    .navbar {
+        padding-top: 0.9375rem;
+        padding-bottom: 0.9375rem;
+    }
+}
+/* End Header */
 
 /* Start Hero */
 .hero {
@@ -177,6 +257,13 @@
     font-size: 1.5rem;
 }
 
+@media screen and (max-width:768px) {
+    .hero {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
 @media screen and (max-width:1200px) {
     .hero h1 {
         font-size: var(--fs-lg);
@@ -192,13 +279,6 @@
 
     .hero .label {
         font-size: var(--fs-xs);
-    }
-}
-
-@media screen and (max-width:768px) {
-    .hero {
-        padding-top: 40px;
-        padding-bottom: 40px;
     }
 }
 /* End Hero */
@@ -251,16 +331,15 @@
     padding-bottom: 80px;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:768px) {
     .discover-more-nfts {
-        padding-top: 40px;
+        padding-bottom: 60px;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1200px) {
     .discover-more-nfts {
         padding-top: 40px;
-        padding-bottom: 60px;
     }
 }
 /* End Discover More NFTs*/
@@ -275,15 +354,6 @@
     .nft-highlight {
         background-image: url(./../img/nft-highlight/nft-highlight-desktop.webp);
     }
-}
-
-@media screen and (max-width: 1200px) {
-    .nft-highlight {
-        background-image: url(./../img/nft-highlight/nft-highlight-tablet.webp);
-    }
-}
-
-@media screen and (min-width: 1200px) {
     .highlight-body {
         padding-top: 360px;
         padding-bottom: 60px;
@@ -291,6 +361,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .nft-highlight {
+        background-image: url(./../img/nft-highlight/nft-highlight-tablet.webp);
+    }
     .highlight-body {
         padding-top: 120px;
         padding-bottom: 40px;
@@ -344,15 +417,6 @@
     font-size: var(--fs-sm);
 }
 
-@media screen and (max-width:1200px) {
-    .subscribe-widget h2 {
-        font-size: 1.75rem;
-    }
-    .subscribe-widget p {
-        font-size: 1rem;
-    }
-}
-
 @media screen and (max-width:768px) {
     .subscribe-widget {
         padding-bottom: 40px;
@@ -362,21 +426,37 @@
         padding: 0;
     }
 }
+
+@media screen and (max-width:1200px) {
+    .subscribe-widget h2 {
+        font-size: 1.75rem;
+    }
+    .subscribe-widget p {
+        font-size: 1rem;
+    }
+}
 /* End Subscribe Widget */
 
 /* Start Newsletter Signup */
-.newsletter__signup__input {
+.subscribe-widget .newsletter__signup__input {
     padding: 1.1875rem 14rem 1.1875rem 1.25rem;
 }
 
-.form__control:focus {
-  border-color: var(--action);
-  box-shadow: 0 0 0 .25rem rgba(162, 89, 255, .25);
+.subscribe-widget .subscribe__btn {
+    background-color: var(--action);
+}
+
+.subscribe-widget .form__control:focus {
+    border-color: var(--action);
+    box-shadow: 0 0 0 .25rem rgba(162, 89, 255, .25);
 }
 
 @media screen and (max-width:768px) {
-    .newsletter__signup__input {
+    .subscribe-widget .newsletter__signup__input {
         padding: 0.75rem 1.25rem;
+    }
+    .subscribe-widget .subscribe__btn {
+        padding: 0.8125rem 0;
     }
 }
 
@@ -384,41 +464,8 @@
     .subscribe-widget .newsletter__signup__input {
         padding: 0.75rem 1.25rem;
     }
-}
-
-@media screen and (max-width:768px) {
-    .newsletter__signup__btn {
-        padding: 0.438rem 0;
-    }
-}
-
-@media screen and (max-width:1200px) {
-    .subscribe-widget .newsletter__signup__btn {
-        padding: 0.438rem 0;
-    }
-}
-
-@media screen and (min-width:768px) {
-    .position__md__absolute {
-        position: absolute;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .position__xl__absolute {
-        position: absolute;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .w__sm__100 {
-        width: 100% !important;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .w__md__100 {
-        width: 100% !important;
+    .subscribe-widget .subscribe__btn {
+        padding: 0.8125rem 0;
     }
 }
 /* End Newsletter Signup */
@@ -433,20 +480,21 @@ footer .newsletter__signup__input {
     padding: 1.1875rem 12rem 1.1875rem 1.25rem;
 }
 
+footer .subscribe__btn {
+    background-color: var(--action);
+}
+
+footer .form__control:focus {
+    border-color: var(--action);
+    box-shadow: 0 0 0 .25rem rgba(162, 89, 255, .25);
+}
+
 @media screen and (max-width:768px) {
     footer .newsletter__signup__input {
         padding: 0.75rem 1.25rem;
     }
+    footer .subscribe__btn {
+        padding: 0.8125rem 0;
+    }
 }
 /* End Footer */
-
-/* Start Rounded */
-.rounded__20 {
-    border-radius: 20px;
-}
-
-.rounded__bottom__20 {
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-/* End Rounded */

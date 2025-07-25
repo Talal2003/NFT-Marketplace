@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-xl">
-            <div class="container-fluid" style="padding: 1.25rem 3.125rem;">
+            <div class="container-fluid custom__container__fluid">
                 <a href="./index.html">
                     <div class="icon d-flex align-items-center gap-3">
                         <img src="./assets/svg/Storefront.svg" class="d-none d-xl-block" alt="Storefront logo">
@@ -21,24 +21,23 @@
                         <img src="./assets/svg/NFT Marketplace-Tablet.svg" class="d-block d-xl-none" alt="NFT Marketplace logo for tablet">
                     </div>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="./assets/svg/navbar-toggler-icon.svg" alt="">
                 </button>
                 
                 <div class="collapse navbar-collapse fw-semibold" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-xl-0 d-flex align-items-center" style="gap: 0.625rem;">
-                        <li class="nav-item" style="padding: 0 1.25rem;">
+                    <ul class="navbar-nav ms-auto mb-2 mb-xl-0 d-flex align-items-center gap-2">
+                        <li class="nav-item nav__item">
                             <a class="nav-link" aria-current="page" href="./pages/marketplace.html">Marketplace</a>
                         </li>
-                        <li class="nav-item" style="padding: 0 1.25rem;">
+                        <li class="nav-item nav__item">
                             <a class="nav-link" href="./pages/rankings.html">Rankings</a>
                         </li>
-                        <li class="nav-item" style="padding: 0 1.25rem;">
+                        <li class="nav-item nav__item">
                             <a class="nav-link" href="./pages/connect-a-wallet.html">Connect a wallet</a>
                         </li>
                         <li>
-                            <a href="./pages/signup.html" class="btn btn-action d-flex gap-3"
-                            style="--bs-btn-padding-y: 1.1875rem; --bs-btn-padding-x: 1.875rem; --bs-btn-font-size: 1rem;">
+                            <a href="./pages/signup.html" class="sign-up-btn btn rounded__20 d-flex gap-3">
                                 <img src="./assets/svg/User.svg" alt="">
                                 <span class="fw-semibold">Sign Up</span>
                             </a>
@@ -70,9 +69,8 @@
                             </a>
                         </div>
                         
-                        <a href="./pages/signup.html" class="btn btn-action d-flex gap-3 justify-content-center align-self-stretch align-self-md-start"
-                        style="--bs-btn-padding-y: 1.25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;">
-                            <img src="./assets/svg/RocketLaunch.svg" alt="" style="width: 1.25rem; height: auto;">
+                        <a href="./pages/signup.html" class="btn btn-action rounded__20 d-flex gap-3 justify-content-center align-self-stretch align-self-md-start">
+                            <img src="./assets/svg/RocketLaunch.svg" alt="">
                             <span class="fw-semibold">Get Started</span>
                         </a>
                         
@@ -129,8 +127,7 @@
                                     <a href="./pages/nft-page.html">
                                         <img src="./assets/img/trending-collection/DSGN_Animals_3.webp" class="flex-fill" alt="DSGN Animals tertiary  image">
                                     </a>
-                                    <a class="btn btn-action d-flex justify-content-center align-items-center flex-fill" href="./pages/nft-page.html" role="button"
-                                    style="width: 100px;">
+                                    <a class="btn btn-action d-flex justify-content-center align-items-center flex-fill" href="./pages/nft-page.html" role="button">
                                         <span class="secondaryFont fs__sm fw-bold">1025+</span>
                                     </a>
                                 </div>
@@ -158,8 +155,7 @@
                                     <a href="./pages/nft-page.html">
                                         <img src="./assets/img/trending-collection/DSGN_Animals_3.webp" class="flex-fill" alt="DSGN Animals tertiary  image">
                                     </a>
-                                    <a class="btn btn-action d-flex justify-content-center align-items-center flex-fill" href="./pages/nft-page.html" role="button"
-                                    style="width: 100px;">
+                                    <a class="btn btn-action d-flex justify-content-center align-items-center flex-fill" href="./pages/nft-page.html" role="button">
                                         <span class="secondaryFont fs__sm fw-bold">1025+</span>
                                     </a>
                                 </div>
@@ -187,8 +183,7 @@
                                     <a href="./pages/nft-page.html">
                                         <img src="./assets/img/trending-collection/DSGN_Animals_3.webp" class="flex-fill" alt="DSGN Animals tertiary  image">
                                     </a>
-                                    <a class="btn btn-action d-flex justify-content-center align-items-center flex-fill" href="./pages/nft-page.html" role="button"
-                                    style="width: 100px;">
+                                    <a class="btn btn-action d-flex justify-content-center align-items-center flex-fill" href="./pages/nft-page.html" role="button">
                                         <span class="secondaryFont fs__sm fw-bold">1025+</span>
                                     </a>
                                 </div>
@@ -214,9 +209,8 @@
                         <p class="mb-0">Checkout Top Rated Creators on the NFT Marketplace</p>
                     </div>
                     <div class="view-rankings-btn mt-auto ms-auto">
-                        <a href="./pages/rankings.html" class="btn btn-outline-primary btn-outline-action d-none d-md-flex justify-content-center gap-3"
-                        style="--bs-btn-padding-y: 1.25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;">
-                            <img src="./assets/svg/RocketLaunchPurple.svg" alt="" style="width: 1.25rem; height: auto;">
+                        <a href="./pages/rankings.html" class="btn rounded__20 btn-outline-action d-none d-md-flex justify-content-center gap-3">
+                            <img src="./assets/svg/RocketLaunchPurple.svg" alt="">
                             <span class="fw-semibold text-light text-nowrap">View Rankings</span>
                         </a>
                     </div>
@@ -428,9 +422,8 @@
                     </div>
                 </div>
 
-                <a href="./pages/rankings.html" class="btn btn-outline-primary btn-outline-action d-flex d-md-none justify-content-center gap-3"
-                style="--bs-btn-padding-y: 1.25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;">
-                    <img src="./assets/svg/RocketLaunchPurple.svg" alt="" style="width: 1.25rem; height: auto;">
+                <a href="./pages/rankings.html" class="btn btn-outline-action rounded__20 d-flex d-md-none justify-content-center gap-3">
+                    <img src="./assets/svg/RocketLaunchPurple.svg" alt="">
                     <span class="fw-semibold text-light text-nowrap">View Rankings</span>
                 </a>
             </div>
@@ -525,9 +518,8 @@
                         <p class="mb-0">Explore New Trending Nfts</p>
                     </div>
                     <div class="view-rankings-btn mt-auto ms-auto">
-                        <a href="./pages/marketplace.html" class="btn btn-outline-primary btn-outline-action d-none d-md-flex justify-content-center gap-3"
-                        style="--bs-btn-padding-y: 1.25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;">
-                            <img src="./assets/svg/Eye.svg" alt="" style="width: 1.25rem; height: auto;">
+                        <a href="./pages/marketplace.html" class="btn btn-outline-action rounded__20 d-none d-md-flex justify-content-center gap-3">
+                            <img src="./assets/svg/Eye.svg" alt="">
                             <spa class="fw-semibold text-light text-nowrap">See All</span>
                         </a>
                     </div>
@@ -610,9 +602,8 @@
                     </div>
                 </div>
 
-                <a href="./pages/marketplace.html" class="btn btn-outline-primary btn-outline-action d-flex d-md-none justify-content-center gap-3"
-                style="--bs-btn-padding-y: 1.25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;">
-                    <img src="./assets/svg/Eye.svg" alt="" style="width: 1.25rem; height: auto;">
+                <a href="./pages/marketplace.html" class="btn btn-outline-action rounded__20 d-flex d-md-none justify-content-center gap-3">
+                    <img src="./assets/svg/Eye.svg" alt="">
                     <spa class="fw-semibold text-light text-nowrap">See All</span>
                 </a>
             </div>
@@ -656,8 +647,7 @@
                             </div>
                         </div>
 
-                        <a href="./pages/nft-page.html" class="btn btn-light rounded__20 d-flex justify-content-center gap-3 align-self-stretch align-self-md-start"
-                        style="--bs-btn-padding-y: 1.25rem; --bs-btn-padding-x: 3rem; --bs-btn-font-size: 1rem;">
+                        <a href="./pages/nft-page.html" class="btn btn-light rounded__20 d-flex justify-content-center gap-3 align-self-stretch align-self-md-start">
                             <img src="./assets/svg/Eye.svg" alt="">
                             <span class="fw-semibold" href="#" role="button">See NFT</span>
                         </a>
@@ -754,10 +744,9 @@
                             <form class="position-relative w-100 d-flex flex-column gap-3" style="max-width: 420px;">
                                 <input type="email" class="newsletter__signup__input form__control bg-light dark-text-placeholder text-background rounded__20 w-100"
                                 id="exampleFormControlInput1" placeholder="Enter your email here">
-                                <button type="submit" class="btn btn-action position__xl__absolute end-0 top-0 bottom-0 d-flex gap-2 align-items-center justify-content-center rounded__20 w__md__100"
-                                style="--bs-btn-padding-x: 3rem;">
-                                    <img src="./assets/svg/EnvelopeSimple.svg" alt="" style="width: 1.25rem; height: auto;">
-                                    <span class="newsletter__signup__btn fw-semibold">Subscribe</span>
+                                <button type="submit" class="btn subscribe__btn position__xl__absolute end-0 top-0 bottom-0 d-flex gap-2 align-items-center justify-content-center rounded__20 w__md__100">
+                                    <img src="./assets/svg/EnvelopeSimple.svg" alt="">
+                                    <span class="fw-semibold">Subscribe</span>
                                 </button>
                             </form>
                         </div>
@@ -813,10 +802,9 @@
                         <form class="position-relative w-100 d-flex flex-column gap-3" style="max-width: 420px;">
                             <input type="email" class="newsletter__signup__input form__control bg-light dark-text-placeholder text-background rounded__20 w-100"
                             id="exampleFormControlInput1" placeholder="Enter your email here">
-                            <button type="submit" class="btn btn-action position__md__absolute end-0 top-0 bottom-0 d-flex gap-2 align-items-center justify-content-center rounded__20 w__sm__100"
-                            style="--bs-btn-padding-x: 3rem;">
-                                <img src="./assets/svg/EnvelopeSimple.svg" class="d-md-none" alt="" style="width: 1.25rem; height: auto;">
-                                <span class="newsletter__signup__btn fw-semibold">Subscribe</span>
+                            <button type="submit" class="btn subscribe__btn position__md__absolute end-0 top-0 bottom-0 d-flex gap-2 align-items-center justify-content-center rounded__20 w__sm__100">
+                                <img src="./assets/svg/EnvelopeSimple.svg" class="d-md-none" alt="">
+                                <span class="fw-semibold">Subscribe</span>
                             </button>
                         </form>
                     </div>
