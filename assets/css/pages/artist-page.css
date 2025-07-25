@@ -25,24 +25,34 @@
     padding-bottom: 2.5rem;
 }
 
-.profile-name h2 {
+.artist-info .profile-name h2 {
     font-size: var(--fs-xl);
 }
 
-.profile-info .value {
+.artist-info .id-btn {
+    --bs-btn-padding-y: 1.1875rem;
+    --bs-btn-padding-x: 1.28125rem;
+}
+
+.artist-info .follow-btn {
+    --bs-btn-padding-y: 1.1875rem;
+    --bs-btn-padding-x: 1.875rem;
+}
+
+.artist-info .profile-info .value {
     font-size: var(--fs-md);
 }
 
-.profile-info .label {
+.artist-info .profile-info .label {
     font-size: var(--fs-sm);
 }
 
-.bio h4,.links h4 {
+.artist-info .bio h4,.artist-info .links h4 {
     font-size: var(--fs-sm);
     font-weight: 700;
 }
 
-.bio p {
+.artist-info .bio p {
     font-size: var(--fs-sm);
 }
 

@@ -33,6 +33,32 @@
     padding: 0.75rem 1.875rem;
 }
 
+.nft-info .auction-mobile {
+    padding: 1.875rem;
+}
+
+.nft-info .auction-label {
+    font-size: 0.75rem;
+}
+
+.nft-info .time-unit {
+    font-size: 0.75rem;
+}
+
+.nft-info .time-value {
+    line-height: 120%;
+}
+
+.nft-info .colon {
+    line-height: 150%;
+}
+
+.nft-info .bid-button {
+    --bs-btn-padding-y: 1.1875rem;
+    --bs-btn-padding-x: 5.03125rem;
+    --bs-btn-font-size: 1rem;
+}
+
 .more-from-this-artist {
     padding-top: 5rem;
     padding-bottom: 5rem;

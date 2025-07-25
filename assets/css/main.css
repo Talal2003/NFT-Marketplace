@@ -201,8 +201,6 @@ button:hover,a:hover {
     --bs-btn-font-size: 1rem;
     --bs-btn-font-weight: 400;
     --bs-btn-line-height: 1.5;
-    --bs-btn-color: var(--bs-body-color);
-    --bs-btn-bg: transparent;
     --bs-btn-border-width: var(--bs-border-width);
     --bs-btn-border-color: transparent;
     --bs-btn-border-radius: var(--bs-border-radius);
@@ -277,8 +275,8 @@ button:hover,a:hover {
 
 /* Start Hero */
 .hero {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .hero h1 {
@@ -299,8 +297,8 @@ button:hover,a:hover {
 
 @media screen and (max-width:768px) {
     .hero {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
     }
 }
 
@@ -325,8 +323,8 @@ button:hover,a:hover {
 
 /* Start Trending Collection */
 .trending-collection {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 @media screen and (max-width:1200px) {
@@ -343,14 +341,14 @@ button:hover,a:hover {
 
 /* Start Top Creators*/
 .top-creators {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 @media screen and (max-width:1200px) {
     .top-creators {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
     }
 }
 
@@ -366,22 +364,22 @@ button:hover,a:hover {
 
 /* Start Browse Categories*/
 .browse-categories {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 @media screen and (max-width:1200px) {
     .browse-categories {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
     }
 }
 /* End Browse Categories*/
 
 /* Start Discover More NFTs*/
 .discover-more-nfts {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 @media screen and (max-width:768px) {
@@ -392,7 +390,7 @@ button:hover,a:hover {
 
 @media screen and (max-width:1200px) {
     .discover-more-nfts {
-        padding-top: 40px;
+        padding-top: 2.5rem;
     }
 }
 /* End Discover More NFTs*/
@@ -403,13 +401,37 @@ button:hover,a:hover {
     background-position: center;
 }
 
+.nft-highlight .title {
+    font-size: var(--fs-xl)
+}
+
+.nft-highlight .auction-timer {
+    background-color: rgba(59, 59, 59, 0.5);
+}
+
+.nft-highlight .auction-label {
+    font-size: 0.75rem;
+}
+
+.nft-highlight .time-unit {
+    font-size: 0.75rem;
+}
+
+.nft-highlight .time-value {
+    line-height: 120%;
+}
+
+.nft-highlight .colon {
+    line-height: 150%;
+}
+
 @media screen and (min-width: 1200px) {
     .nft-highlight {
         background-image: url(./../img/nft-highlight/nft-highlight-desktop.webp);
     }
     .highlight-body {
-        padding-top: 360px;
-        padding-bottom: 60px;
+        padding-top: 22.5rem;
+        padding-bottom: 3.75rem;
     }
 }
 
@@ -418,16 +440,19 @@ button:hover,a:hover {
         background-image: url(./../img/nft-highlight/nft-highlight-tablet.webp);
     }
     .highlight-body {
-        padding-top: 120px;
-        padding-bottom: 40px;
+        padding-top: 7.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .nft-highlight .title {
+        font-size: var(--fs-lg)
     }
 }
 /* End NFT Highlight Section */
 
 /* Start How It Works*/
 .how-it-works {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .how-it-works .card-body h3 {
@@ -440,9 +465,10 @@ button:hover,a:hover {
 
 @media screen and (max-width:1200px) {
     .how-it-works {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
     }
+
     .how-it-works .card-body h3 {
         font-size: var(--fs-xs);
     }
@@ -450,12 +476,18 @@ button:hover,a:hover {
         font-size: var(--fs-xxs);
     }
 }
+
+@media screen and (max-width:768px) {
+    .how-it-works .card-body {
+        max-width: 9.6875rem;
+    }
+}
 /* End How It Works*/
 
 /* Start Subscribe Widget */
 .subscribe-widget {
-    padding-top: 40px;
-    padding-bottom: 80px;
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
 }
 
 .subscribe-widget .bg-card {
@@ -470,6 +502,18 @@ button:hover,a:hover {
     font-size: var(--fs-sm);
 }
 
+@media screen and (max-width:1200px) {
+    .subscribe-widget .bg-card {
+        padding: 2.5rem 1.875rem;
+    }
+    .subscribe-widget h2 {
+        font-size: 1.75rem;
+    }
+    .subscribe-widget p {
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width:768px) {
     .subscribe-widget {
         padding-bottom: 40px;
@@ -479,18 +523,13 @@ button:hover,a:hover {
         padding: 0;
     }
 }
-
-@media screen and (max-width:1200px) {
-    .subscribe-widget h2 {
-        font-size: 1.75rem;
-    }
-    .subscribe-widget p {
-        font-size: 1rem;
-    }
-}
 /* End Subscribe Widget */
 
 /* Start Newsletter Signup */
+.subscribe-widget .newsletter__form {
+    max-width: 420px;
+}
+
 .subscribe-widget .newsletter__signup__input {
     padding: 1.1875rem 14rem 1.1875rem 1.25rem;
 }
@@ -525,11 +564,15 @@ button:hover,a:hover {
 
 /* Start Footer */
 footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     border-color: var(--primaryBackground);
     border-top-style: solid;
     border-top-width: 2px;
+}
+
+footer .newsletter__form {
+    max-width: 420px;
 }
 
 footer .newsletter__signup__input {

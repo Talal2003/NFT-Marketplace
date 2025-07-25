@@ -19,6 +19,10 @@
     font-size: var(--fs-xl);
 }
 
+.connect-a-wallet-section .wallet-options {
+    max-width: 320px;
+}
+
 .connect-a-wallet-section .bg-card {
     padding: 1rem 1.25rem 1rem 2.5rem;
 }
