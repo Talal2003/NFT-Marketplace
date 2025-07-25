@@ -295,6 +295,10 @@
         padding-bottom: 40px;
     }
 }
+
+.trending-collection .more__btn {
+   width: 100px; 
+}
 /* End Trending Collection */
 
 /* Start Top Creators*/
