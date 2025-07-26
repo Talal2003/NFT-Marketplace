@@ -1,7 +1,7 @@
 .nft-background-img .cover {
     background-size: cover;
     background-position: center;
-    background-image: url(./../../img/nft-page/Image-Placeholder.webp);
+    background-image: url(./../../../assets/img/nft-page/nft-page-cover.webp);
     height: 35rem;
 }
 
