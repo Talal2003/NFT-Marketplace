@@ -256,6 +256,10 @@ button:hover,a:hover {
 /* End Rounded */
 
 /* Start Header */
+header .logo-nft {
+     margin-top: 4px;
+}
+
 .navbar {
     padding-top: 2.125rem;
     padding-bottom: 2.125rem;
