@@ -1,7 +1,9 @@
+/* Created by Talal Alshamalia */
+
 .avatar-cover .cover {
     background-size: cover;
     background-position: center;
-    background-image: url(./../../img/artist-page/image-placeholder.webp);
+    background-image: url(./../../../assets/img/artist-page/cover-image-placeholder.webp);
     height: 20rem;
 }
 

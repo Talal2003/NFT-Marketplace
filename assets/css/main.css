@@ -1,3 +1,4 @@
+/* Created by Talal Alshamalia */
 
 /*Start Base Styles */
 :root {
@@ -22,7 +23,7 @@
     background-color: var(--primaryBackground);
     font-family: var(--primaryFont);
 }
-/*End Base Styles */
+/* End Base Styles */
 
 /* Start Custom Container */
 .custom__container {
