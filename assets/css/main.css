@@ -373,10 +373,17 @@ header .logo-nft {
     padding-bottom: 5rem;
 }
 
+.browse-categories span {
+    font-size: var(--fs-sm);
+}
+
 @media screen and (max-width:1200px) {
     .browse-categories {
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
+    }
+    .browse-categories span {
+        font-size: var(--fs-xs);
     }
 }
 /* End Browse Categories*/
